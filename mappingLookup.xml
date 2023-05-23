@@ -1,0 +1,374 @@
+<lookup>
+    <processTransaction>
+        <returnCode>
+            <code value='0'>0</code>
+            <code value='0'>0</code>
+            <code value=''>801099</code>
+            <code value='0'>0</code>
+            <code value=''>801099</code>
+            <code value='0'>0</code>
+            <code value=''>801099</code>
+            <code value='0'>0</code>
+            <code value=''>801099</code>
+            <code value=''>801099</code>
+            <code value='0'>0</code>
+            <code value='PENDING'>0</code>
+            <code value='PAID'>0</code>
+            <code value='CANCEL'>0</code>
+            <code value='CANCELLED'>0</code>
+            <code value='ONHOLD'>801099</code>
+            <code value='101'>801099</code>
+            <code value='102'>801099</code>
+            <code value='103'>801099</code>
+            <code value='104'>801099</code>
+            <code value='106'>801099</code>
+            <code value='107'>801099</code>
+            <code value='108'>801099</code>
+            <code value='109'>801099</code>
+            <code value='110'>801099</code>
+            <code value='111'>801099</code>
+            <code value='112'>801099</code>
+            <code value='113'>801099</code>
+            <code value='114'>801099</code>
+            <code value='115'>801099</code>
+            <code value='DEFAULT'>801099</code>
+            <code value='105'>801099</code>
+            <code value='0'>0</code>
+            <code value='PENDING'>0</code>
+            <code value='PAID'>0</code>
+            <code value='CANCEL'>0</code>
+            <code value='CANCELLED'>0</code>
+            <code value='ONHOLD'>801099</code>
+            <code value='101'>801099</code>
+            <code value='102'>801099</code>
+            <code value='103'>801099</code>
+            <code value='104'>801099</code>
+            <code value='106'>801099</code>
+            <code value='107'>801099</code>
+            <code value='108'>801099</code>
+            <code value='109'>801099</code>
+            <code value='110'>801099</code>
+            <code value='111'>801099</code>
+            <code value='112'>801099</code>
+            <code value='113'>801099</code>
+            <code value='114'>801099</code>
+            <code value='115'>801099</code>
+            <code value='DEFAULT'>801099</code>
+            <code value='105'>801099</code>
+            <code value='0'>0</code>
+            <code value='PENDING'>0</code>
+            <code value='PAID'>0</code>
+            <code value='CANCEL'>0</code>
+            <code value='CANCELLED'>0</code>
+            <code value='ONHOLD'>801099</code>
+            <code value='101'>801099</code>
+            <code value='102'>801099</code>
+            <code value='103'>801099</code>
+            <code value='104'>801099</code>
+            <code value='106'>801099</code>
+            <code value='107'>801099</code>
+            <code value='108'>801099</code>
+            <code value='109'>801099</code>
+            <code value='110'>801099</code>
+            <code value='111'>801099</code>
+            <code value='112'>801099</code>
+            <code value='113'>801099</code>
+            <code value='114'>801099</code>
+            <code value='115'>801099</code>
+            <code value='DEFAULT'>801099</code>
+            <code value='105'>801099</code>
+            <code value='0'>0</code>
+            <code value='PENDING'>0</code>
+            <code value='PAID'>0</code>
+            <code value='CANCEL'>0</code>
+            <code value='CANCELLED'>0</code>
+            <code value='ONHOLD'>801099</code>
+            <code value='101'>801099</code>
+            <code value='102'>801099</code>
+            <code value='103'>801099</code>
+            <code value='104'>801099</code>
+            <code value='106'>801099</code>
+            <code value='107'>801099</code>
+            <code value='108'>801099</code>
+            <code value='109'>801099</code>
+            <code value='110'>801099</code>
+            <code value='111'>801099</code>
+            <code value='112'>801099</code>
+            <code value='113'>801099</code>
+            <code value='114'>801099</code>
+            <code value='115'>801099</code>
+            <code value='DEFAULT'>801099</code>
+            <code value='105'>801099</code>
+            <code value='0'>0</code>
+            <code value='PENDING'>0</code>
+            <code value='PAID'>0</code>
+            <code value='CANCEL'>0</code>
+            <code value='CANCELLED'>0</code>
+            <code value='ONHOLD'>801099</code>
+            <code value='101'>801099</code>
+            <code value='102'>801099</code>
+            <code value='103'>801099</code>
+            <code value='104'>801099</code>
+            <code value='106'>801099</code>
+            <code value='107'>801099</code>
+            <code value='108'>801099</code>
+            <code value='109'>801099</code>
+            <code value='110'>801099</code>
+            <code value='111'>801099</code>
+            <code value='112'>801099</code>
+            <code value='113'>801099</code>
+            <code value='114'>801099</code>
+            <code value='115'>801099</code>
+            <code value='DEFAULT'>801099</code>
+            <code value='105'>801099</code>
+        </returnCode>
+
+        <senderIdType>
+            <code value="R1">PAS</code>	
+            <code value="R3">GII</code>	
+            <code value="R4">GII</code>	
+            <code value="R8">GII</code>	
+        </senderIdType>
+
+        <disbursalType>
+            <code value="PU">C</code>	
+            <code value="SB">B</code>	
+            <code value="OB">B</code>	
+        </disbursalType>
+
+        <purposeCode>
+            <code value='INHERITANCE'>19</code>
+            <code value='INVESTMENT'>4</code>
+            <code value='SETTLEMENT OF PERSONAL PURCHASE'>10</code>
+            <code value='Military service allowances'>20</code>
+            <code value='Installments'>20</code>
+            <code value='Family Support'>1</code>
+            <code value='Savings'>2</code>
+            <code value='Electronic Appliances Purchase'>20</code>
+            <code value='Medical Expenses'>13</code>
+            <code value='Consultant Fees'>20</code>
+            <code value='Vehicle Purchase'>20</code>
+            <code value='Subsistences'>20</code>
+            <code value='Construction Building Material'>20</code>
+            <code value='Trade Related Payment'>9</code>
+            <code value='Computer Accessories Purchase'>20</code>
+            <code value='Auto Accessories  Purchase'>20</code>
+            <code value='Travelling Expenses'>16</code>
+            <code value='Hotel Booking'>15</code>
+            <code value='Gift'>8</code>
+            <code value='Communication Service'>20</code>
+            <code value='Cost Of Transport And Shipping'>20</code>
+            <code value='Education Expenses'>5</code>
+            <code value='Payment For Material Purcahse'>10</code>
+            <code value='Rent Payment'>17</code>
+            <code value='Salary Payment'>14</code>
+            <code value='Loan Payment'>11</code>
+            <code value='Freight Chargse - Freight Charges'>20</code>
+            <code value='Realstate Purchase'>18</code>
+            <code value='Freight Handling Charges'>20</code>
+            <code value='Imports'>20</code>
+            <code value='Exports'>20</code>
+            <code value='Online Shopping'>10</code>
+            <code value='Government Fees'>20</code>
+            <code value='Insurance Services'>12</code>
+        </purposeCode>
+
+        <fundSourceType>
+            <code value='Salary'>1</code>
+            <code value='Stocks'>2</code>
+            <code value='Other'>7</code>
+            <code value='Saving'>7</code>
+            <code value='Gratuity'>7</code>
+            <code value='Legal Settelment'>3</code>
+            <code value='Sale Of Property'>2</code>
+            <code value='Sale Of Vehicle'>2</code>
+            <code value='Sale Of Shares'>2</code>
+            <code value='Bonus'>5</code>
+            <code value='Dividend Of Shares'>2</code>
+            <code value='Process Of Litigation'>7</code>
+            <code value='Business'>2</code>
+            <code value='Retained Earning'>7</code>
+            <code value='Travel Expenses'>7</code>
+            <code value='INSURANCE CLAIM'>6</code>
+            <code value='Advance End of Service'>7</code>
+            <code value='BANK LOAN'>4</code>
+            <code value='End of Service'>7</code>
+        </fundSourceType>
+
+    </processTransaction>
+
+    <cancelTransaction>
+         <returnCode>
+            <code value='0'>0</code>
+             <code value='000'>0</code>
+            <code value=''>801099</code>
+            <code value='0'>0</code>
+            <code value='PENDING'>0</code>
+            <code value='PAID'>0</code>
+            <code value='CANCEL'>0</code>
+            <code value='CANCELLED'>0</code>
+            <code value='ONHOLD'>801099</code>
+            <code value='101'>801099</code>
+            <code value='102'>801099</code>
+            <code value='103'>801099</code>
+            <code value='104'>801099</code>
+            <code value='106'>801099</code>
+            <code value='107'>801099</code>
+            <code value='108'>801099</code>
+            <code value='109'>801099</code>
+            <code value='110'>801099</code>
+            <code value='111'>801099</code>
+            <code value='112'>801099</code>
+            <code value='113'>801099</code>
+            <code value='114'>801099</code>
+            <code value='115'>801099</code>
+            <code value='DEFAULT'>801099</code>
+            <code value='105'>801099</code>
+         </returnCode>
+    </cancelTransaction>
+
+    <Fetch_Rates_And_Charges>
+        <returnCode>
+            <code value='0'>0</code>
+            <code value=''>801099</code>
+            <code value='0'>0</code>
+            <code value='PENDING'>0</code>
+            <code value='PAID'>0</code>
+            <code value='CANCEL'>0</code>
+            <code value='CANCELLED'>0</code>
+            <code value='ONHOLD'>801099</code>
+            <code value='101'>801099</code>
+            <code value='102'>801099</code>
+            <code value='103'>801099</code>
+            <code value='104'>801099</code>
+            <code value='106'>801099</code>
+            <code value='107'>801099</code>
+            <code value='108'>801099</code>
+            <code value='109'>801099</code>
+            <code value='110'>801099</code>
+            <code value='111'>801099</code>
+            <code value='112'>801099</code>
+            <code value='113'>801099</code>
+            <code value='114'>801099</code>
+            <code value='115'>801099</code>
+            <code value='DEFAULT'>801099</code>
+            <code value='105'>801099</code>
+        </returnCode>   
+    </Fetch_Rates_And_Charges>
+
+    <getTransactionStatus>
+        <returnCode>
+            <code value='0'>0</code>
+            <code value=''>801099</code>
+            <code value='0'>0</code>
+            <code value='PENDING'>0</code>
+            <code value='PAID'>0</code>
+            <code value='CANCEL'>0</code>
+            <code value='CANCELLED'>0</code>
+            <code value='ONHOLD'>801099</code>
+            <code value='101'>801099</code>
+            <code value='102'>801099</code>
+            <code value='103'>801099</code>
+            <code value='104'>801099</code>
+            <code value='106'>801099</code>
+            <code value='107'>801099</code>
+            <code value='108'>801099</code>
+            <code value='109'>801099</code>
+            <code value='110'>801099</code>
+            <code value='111'>801099</code>
+            <code value='112'>801099</code>
+            <code value='113'>801099</code>
+            <code value='114'>801099</code>
+            <code value='115'>801099</code>
+            <code value='DEFAULT'>801099</code>
+            <code value='105'>801099</code>		
+        </returnCode>
+    </getTransactionStatus>
+
+    <validateBeneficiaryAccount>
+        <returnCode>
+            <code value='0'>0</code>
+            <code value=''>801099</code>
+            <code value='0'>0</code>
+            <code value='PENDING'>0</code>
+            <code value='PAID'>0</code>
+            <code value='CANCEL'>0</code>
+            <code value='CANCELLED'>0</code>
+            <code value='ONHOLD'>801099</code>
+            <code value='101'>801099</code>
+            <code value='102'>801099</code>
+            <code value='103'>801099</code>
+            <code value='104'>801099</code>
+            <code value='106'>801099</code>
+            <code value='107'>801099</code>
+            <code value='108'>801099</code>
+            <code value='109'>801099</code>
+            <code value='110'>801099</code>
+            <code value='111'>801099</code>
+            <code value='112'>801099</code>
+            <code value='113'>801099</code>
+            <code value='114'>801099</code>
+            <code value='115'>801099</code>
+            <code value='DEFAULT'>801099</code>
+            <code value='105'>801099</code>
+        </returnCode>
+    </validateBeneficiaryAccount>
+
+        <returnDesc>
+            <code value="801047">Partial Success for rates</code>	
+            <code value="801099">Unsuccessful Status Code received from Correspondent. Please see Correspondent Return Code and Description for more details</code>	
+            <code value="101013">Batch Details count for No. of transactions doesnot match with number of IP_Transaction tags</code>	
+            <code value="201014">Correspondant Code missing</code>	
+            <code value="201015">Operation Type ID missing</code>	
+            <code value="101016">Invalid Batch Details</code>	
+            <code value="201017">Invalid payload format.</code>	
+            <code value="201018">Request template is not available for the respective Correspondent.</code>	
+            <code value="201019">Method type is not available</code>	
+            <code value="201020">Service type is not available</code>	
+            <code value="801021">Error occurred, while getting response from Correspondent</code>	
+            <code value="201022">Invalid transaction response template</code>	
+            <code value="201023">Correspondent response template is empty</code>	
+            <code value="201024">Delivery Type ID missing</code>	
+            <code value="201025">Service Endpoint URL is not available for the respective Correspondent</code>	
+            <code value="201026">Request token url is corrupted</code>	
+            <code value="801045">No Request is sent for this payload.</code>	
+            <code value="201028">Error occured, while parsing xml.</code>	
+            <code value="201029">payload format is empty.</code>	
+            <code value="801030">Error occured, while parsing of respose template.</code>	
+            <code value="201031">Delivery Type Id missing.</code>	
+            <code value="201032">Sender name is not found.</code>	
+            <code value="201033">FT number is missing.</code>	
+            <code value="201034">Amount value is missing.</code>	
+            <code value="201035">Receiver name, not found.</code>	
+            <code value="201036">Correspondent code is missing.</code>	
+            <code value="201037">Correspondent Reference number is necessary.</code>	
+            <code value="201038">Delivery Type Id is missing.</code>	
+            <code value="201039">Receiver currency code is mandatory</code>	
+            <code value="201040">Receiver currency amount is necessary.</code>	
+            <code value="201041">Receiver Account Number or IBAN, must be available.</code>	
+            <code value="201042">URL is not valid.</code>	
+            <code value="801043">Header is not available for asynchronous response.</code>	
+            <code value="801044">Transaction already persists with same correlation Id.</code>	
+            <code value="101012">Multiple Transactions exist for NT operation type</code>	
+            <code value="101011">Batch Details not found</code>	
+            <code value="201010">Invalid Operation Type ID</code>	
+            <code value="201009">Channel doesnot allow this operation</code>	
+            <code value="201008">Invalid Channel ID</code>	
+            <code value="101007">Invalid XSLT File</code>	
+            <code value="101006">Error occurred in locating XSLT File</code>	
+            <code value="201005">Error occurred while connecting to IP Configuration DB</code>	
+            <code value="201004">Correspondent API does not exist for this operation.</code>	
+            <code value="201003">Correspondent doesnot allow this operation</code>	
+            <code value="201002">Request XML Validation Failed</code>	
+            <code value="201001">Invalid Correspondent Code</code>	
+            <code value="801100">An unexpected error occurred while processing the request. Please see logs for further details.</code>	
+            <code value="801000">Duplicate Transaction</code>	
+            <code value="0000">Success.</code>	
+            <code value="201027">Some data is missed out. Please see logs for further details.</code>	
+            <code value="801046">Partial Success for charges</code>	
+            <code value="801048">No Rates or Charges found</code>	
+            <code value="201045">Connection refused</code>	
+            <code value="801101">Partial Cancelation Succes</code>	
+        </returnDesc>
+
+</lookup>
