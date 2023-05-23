@@ -17,7 +17,7 @@
                     <tem:USERNAME>ALFUAEAPI01</tem:USERNAME>
                     <tem:PASSWORD>EIn@0133</tem:PASSWORD>
                     <tem:AGENTCODE>891</tem:AGENTCODE>
-                    <tem:SESSIONID> <xsl:value-of select="concat($convertedDate1,'-',root/IP/IP_Header/Partner_Code)" /></tem:SESSIONID>
+                    <tem:SESSIONID> <xsl:value-of select="concat($convertedDate,'-',root/IP/IP_Header/Partner_Code)" /></tem:SESSIONID>
                     <tem:REFERENCENO><xsl:value-of select="root/IP/IP_Header/Partner_Code"/></tem:REFERENCENO>
                 </tem:objRef>
             </tem:TransactionStatus>
