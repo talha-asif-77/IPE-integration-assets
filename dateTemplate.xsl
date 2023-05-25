@@ -101,5 +101,33 @@
         <xsl:text>+04:00</xsl:text>
 </xsl:template>
 
+<!-- Convert date from yyyy-MM-dd HH:mm:ss to dd-MMM-yyyy -->
+<xsl:template name="convertDateTime-to-dd-MMM-yyyy">
+  <xsl:param name="inputDateTime" />
+  <xsl:variable name="year" select="substring($inputDateTime, 1, 4)" />
+  <xsl:variable name="month" select="substring($inputDateTime, 6, 2)" />
+  <xsl:variable name="day" select="substring($inputDateTime, 9, 2)" />
+  
+  <xsl:variable name="months">
+    <month>Jan</month>
+    <month>Feb</month>
+    <month>Mar</month>
+    <month>Apr</month>
+    <month>May</month>
+    <month>Jun</month>
+    <month>Jul</month>
+    <month>Aug</month>
+    <month>Sep</month>
+    <month>Oct</month>
+    <month>Nov</month>
+    <month>Dec</month>
+  </xsl:variable>
+  
+  <xsl:value-of select="$day"/>
+  <xsl:text>-</xsl:text>
+  <xsl:value-of select="substring($months/month[number($month)]/text(), 1, 3)"/>
+  <xsl:text>-</xsl:text>
+  <xsl:value-of select="$year"/>
+</xsl:template>
     <!-- Add more date conversion templates here -->
 </xsl:stylesheet>
