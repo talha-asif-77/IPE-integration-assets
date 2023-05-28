@@ -6,23 +6,23 @@
   <xsl:template match="/">
   <xsl:variable name="convertedDate1">
              <xsl:call-template name="convertDateTime-to-YYYYMMDDHHMMSS">
-                          <xsl:with-param name="inputDateTime" select="IP/IP_Header/Request_Timestamp" />
+                          <xsl:with-param name="inputDateTime" select="root/IP/IP_Header/Request_Timestamp" />
             </xsl:call-template>
  </xsl:variable>
  <xsl:variable name="convertedDate2">
              <xsl:call-template name="convertDateTime-to-DD-MM-YYYY">
-                          <xsl:with-param name="inputDateTime" select="IP/Send_Remitance_Transaction_Request/Remitter/Identity_Expiry_Date" />
+                          <xsl:with-param name="inputDateTime" select="root/IP/Send_Remitance_Transaction_Request/Remitter/Identity_Expiry_Date" />
             </xsl:call-template>
  </xsl:variable>
  <xsl:variable name="convertedDate3">
              <xsl:call-template name="convertDateTime-to-DD-MM-YYYY">
-                          <xsl:with-param name="inputDateTime" select="IP/Send_Remitance_Transaction_Request/Transaction/Transaction_Created_Date" />
+                          <xsl:with-param name="inputDateTime" select="root/IP/Send_Remitance_Transaction_Request/Transaction/Transaction_Created_Date" />
             </xsl:call-template>
  </xsl:variable>
-  <xsl:variable name="Delivery_Type" select="IP/Send_Remitance_Transaction_Request/Delivery_Type"/>
-  <xsl:variable name="Identity_Type" select="IP/Send_Remitance_Transaction_Request/Remitter/Identity_Type"/>
-  <xsl:variable name="Source_of_Fund" select="IP/Send_Remitance_Transaction_Request/Remitter/Source_of_Fund"/>
-  <xsl:variable name="Transaction_Purpose" select="IP/Send_Remitance_Transaction_Request/Transaction/Transaction_Purpose"/>
+  <xsl:variable name="Delivery_Type" select="root/IP/Send_Remitance_Transaction_Request/Delivery_Type"/>
+  <xsl:variable name="Identity_Type" select="root/IP/Send_Remitance_Transaction_Request/Remitter/Identity_Type"/>
+  <xsl:variable name="Source_of_Fund" select="root/IP/Send_Remitance_Transaction_Request/Remitter/Source_of_Fund"/>
+  <xsl:variable name="Transaction_Purpose" select="root/IP/Send_Remitance_Transaction_Request/Transaction/Transaction_Purpose"/>
 
     <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">
       <soap:Header/>
@@ -33,7 +33,7 @@
             <tem:PASSWORD>EIn@0133</tem:PASSWORD>
             <tem:AGENTCODE>891</tem:AGENTCODE>
             <tem:SESSIONID>
-              <xsl:value-of select="concat($convertedDate1,'-',IP/IP_Header/Partner_Code)" />
+              <xsl:value-of select="concat($convertedDate1,'-',root/IP/IP_Header/Partner_Code)" />
             </tem:SESSIONID>
             <tem:TrnsType>
               <xsl:value-of select="$lookupTable/lookup/processTransaction/disbursalType/code[@value=$Delivery_Type]"/>
