@@ -15,8 +15,8 @@
             </xsl:call-template>
  </xsl:variable>
  <xsl:variable name="convertedDate3">
-             <xsl:call-template name="convertDateTime-to-DD-MM-YYYY">
-                          <xsl:with-param name="inputDateTime" select="root/IP/Send_Remitance_Transaction_Request/Transaction/Transaction_Created_Date" />
+             <xsl:call-template name="convertDateTime-to-dd-MMM-yyyy">
+                          <xsl:with-param name="inputDateTime" select="root/IP/IP_Header/Request_Timestamp" />
             </xsl:call-template>
  </xsl:variable>
   <xsl:variable name="Delivery_Type" select="root/IP/Send_Remitance_Transaction_Request/Delivery_Type"/>
