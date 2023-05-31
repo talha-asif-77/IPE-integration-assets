@@ -13,13 +13,14 @@
 
   <xsl:variable name="Partner_Return_Code" select="//*[local-name()='StatusCode']" />
   <xsl:variable name="Partner_Return_Desc" select="//*[local-name()='StatusMessage']" />
+  <xsl:variable name="Partner_Ref_No" select="//*[local-name()='ReferenceNo']" />
   <xsl:variable name="afx-code" select="$lookupTable/lookup/cancelTransaction/returnCode/code[@value=$Partner_Return_Code]"/>
    <root> <IP>							
       <IP_Header>						
         <CIF></CIF>					
         <Partner_Ref_No> 
           <xsl:choose>
-						<xsl:when test="//*[local-name()='ReferenceNo']">   <xsl:value-of select="//*[local-name()='ReferenceNo']" />		</xsl:when>
+						<xsl:when test="$Partner_Ref_No >0">   <xsl:value-of select="$Partner_Ref_No"/>		</xsl:when>
 						<xsl:otherwise>2201098230006448</xsl:otherwise>
 					</xsl:choose>
         </Partner_Ref_No>
