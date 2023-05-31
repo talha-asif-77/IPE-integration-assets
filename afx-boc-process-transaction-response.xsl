@@ -19,7 +19,7 @@
         <CIF></CIF>					
         <Partner_Ref_No> 
           <xsl:choose>
-						<xsl:when test="//*[local-name()='ReferenceNo">   <xsl:value-of select="//*[local-name()='ReferenceNo']" />		</xsl:when>
+						<xsl:when test="//*[local-name()='ReferenceN']">   <xsl:value-of select="//*[local-name()='ReferenceNo']" />		</xsl:when>
 						<xsl:otherwise>2201098230006448</xsl:otherwise>
 					</xsl:choose>
          		</Partner_Ref_No>
