@@ -2,6 +2,13 @@
   <xsl:output method="html"  indent="yes" omit-xml-declaration="yes"/>
   <xsl:variable name="lookupTable" select="document('mappingLookup.xml')"/>
 
+    <!-- identity template to copy all nodes and attributes -->
+    <xsl:template match="@* | node()">
+        <xsl:copy>
+            <xsl:apply-templates select="@* | node()"/>
+        </xsl:copy>
+    </xsl:template>
+
   <xsl:template match="/">
 
   <xsl:variable name="Partner_Return_Code" select="//*[local-name()='StatusCode']" />
@@ -24,7 +31,7 @@
         <Business_Return_Desc> <xsl:value-of select="$lookupTable/lookup/returnDesc/code[@value=$afx-code]"/></Business_Return_Desc>					
         <Partner_Return_Code> <xsl:value-of select="$Partner_Return_Code"/></Partner_Return_Code>					
         <Partner_Return_Desc> <xsl:value-of select="$Partner_Return_Desc"/></Partner_Return_Desc>					
-                  
+        <Exact_Response>  <xsl:copy-of select="."/> </Exact_Response>
       </IP_Header>						
     </IP>							
 
