@@ -37,7 +37,7 @@
         <Business_Return_Desc> <xsl:value-of select="$lookupTable/lookup/returnDesc/code[@value=$afx-code]"/></Business_Return_Desc>					
         <Partner_Return_Code> <xsl:value-of select="$Partner_Return_Code"/></Partner_Return_Code>					
         <Partner_Return_Desc> <xsl:value-of select="$Partner_Return_Desc"/></Partner_Return_Desc>					
-        <Exact_Response>  <xsl:copy-of select="."/> </Exact_Response>
+        <Exact_Response> " <xsl:copy-of select="."/> "</Exact_Response>
       </IP_Header>						
      </IP>		</root>					
 
