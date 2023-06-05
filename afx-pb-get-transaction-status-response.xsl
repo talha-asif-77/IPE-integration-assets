@@ -25,7 +25,7 @@
         <Partner_Return_Code> <xsl:value-of select="$Partner_Return_Code"/></Partner_Return_Code>					
         <Partner_Return_Desc> <xsl:value-of select="$Partner_Return_Desc"/></Partner_Return_Desc>					
         <Status></Status>		  
-
+        <Exact_Response>  <xsl:copy-of select="."/> </Exact_Response>
       </IP_Header>						
 
       	<Get_Remittance_Transaction_Status_Response>						

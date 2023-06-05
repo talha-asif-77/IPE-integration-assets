@@ -82,7 +82,8 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema"
   "TransactionRemarks": "",
   "username": "userALF001",
   "password": "HSWND1J3",
-  "agentcode": "ALF"
+  "agentcode": "ALF",
+  "retryCount": <xsl:value-of select="root/IP/IP_Header/retryCount" />
 }
   </xsl:template>
 </xsl:stylesheet>

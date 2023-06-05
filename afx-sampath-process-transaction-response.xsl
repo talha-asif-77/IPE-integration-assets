@@ -16,8 +16,8 @@ exclude-result-prefixes="xs">
  </xsl:variable>
 
 
-  <xsl:variable name="Partner_Return_Code" select="//*[local-name()='processTransactionReturn']" />
-  <xsl:variable name="Partner_Return_Desc" select="//*[local-name()='processTransactionReturn']" />
+  <xsl:variable name="Partner_Return_Code"  select="//processTransactionReturn[not(preceding-sibling::processTransactionReturn)]"/> 
+  <xsl:variable name="Partner_Return_Desc"  select="//processTransactionReturn[not(preceding-sibling::processTransactionReturn)]"/>
   <xsl:variable name="afx-code" select="$lookupTable/lookup/returnCode/code[@value=$Partner_Return_Code]"/>
     <IP>							
       <IP_Header>						
@@ -33,9 +33,35 @@ exclude-result-prefixes="xs">
         <Response_Timestamp></Response_Timestamp>					
                   
         <Business_Return_Code> <xsl:value-of select="$afx-code"/></Business_Return_Code>					
-        <Business_Return_Desc> <xsl:value-of select="$lookupTable/lookup/returnDesc/code[@value=$afx-code]"/></Business_Return_Desc>					
-        <Partner_Return_Code> <xsl:value-of select="$Partner_Return_Code"/></Partner_Return_Code>					
-        <Partner_Return_Desc> <xsl:value-of select="$Partner_Return_Desc"/></Partner_Return_Desc>					
+        <Business_Return_Desc> <xsl:value-of select="$lookupTable/lookup/returnDesc/code[@value=$afx-code]"/></Business_Return_Desc>		
+
+         <Exact_Response>  <xsl:copy-of select="."/> </Exact_Response>
+      <xsl:for-each select="//processTransactionReturn">
+
+     <xsl:if test="processTransactionReturn=preceding::processTransactionReturn[1]">
+     			<Partner_Return_Code> <xsl:value-of select="//processTransactionReturn"/></Partner_Return_Code>
+     </xsl:if>
+     <xsl:if test="processTransactionReturn=preceding::processTransactionReturn[2]">
+     			 <Partner_Return_Desc> <xsl:value-of select="//processTransactionReturn"/></Partner_Return_Desc>	
+     </xsl:if>
+     </xsl:for-each>
+
+
+        <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+  <xsl:template match="/">
+    <output>
+      <abcd>
+        <xsl:value-of select="//tag[generate-id() = generate-id(//tag[1])]"/>
+      </abcd>
+      <xyz>
+        <xsl:value-of select="//tag[generate-id() = generate-id(//tag[2])]"/>
+      </xyz>
+    </output>
+  </xsl:template>
+
+</xsl:stylesheet>
+				
                   
       </IP_Header>						
     </IP>		

@@ -14,18 +14,20 @@ exclude-result-prefixes="xs">
                           <xsl:with-param name="inputDateTime" select="root/IP/IP_Header/Request_Timestamp" />
             </xsl:call-template>
  </xsl:variable>
-
+ <xsl:variable name="disbursalType" select="root/IP/Send_Remitance_Transaction_Request/Delivery_Type"></xsl:variable>
+ <xsl:variable name="purposeCode" select="root/IP/Send_Remitance_Transaction_Request/Transaction/Transaction_Purpose"></xsl:variable>
+ <xsl:variable name="fundSource" select="root/IP/Send_Remitance_Transaction_Request/Remitter/Source_of_Fund"></xsl:variable>
     <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.ws.erm.sampath">
         <soapenv:Header/>
         <soapenv:Body>
             <ser:processTransaction>
-                <ser:user>101204</ser:user>
-                <ser:accessCode>YWxmMTEx</ser:accessCode>
-                <ser:companyId>129</ser:companyId>
+                <ser:user>100230</ser:user>
+                <ser:accessCode>aG9heA==</ser:accessCode>
+                <ser:companyId>35</ser:companyId>
                 <ser:txnData><xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Transaction/Transaction_No" /></ser:txnData>
                 <ser:txnData><xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Transaction/Source_Country_Code_ISO3" /></ser:txnData>
                 <ser:txnData><xsl:choose>
-                            <xsl:when test="root/IP/Send_Remitance_Transaction_Request/Remitter/Local_Currency_Amount"></xsl:when>
+                            <xsl:when test="root/IP/Send_Remitance_Transaction_Request/Remitter/Local_Currency_Amount"><xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Remitter/Local_Currency_Amount"></xsl:value-of></xsl:when>
                             <xsl:otherwise><xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Amount_Paid" /></xsl:otherwise>
                         </xsl:choose>
                 </ser:txnData>
@@ -40,12 +42,13 @@ exclude-result-prefixes="xs">
                 <ser:txnData><xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Beneficiary/Account_No" /></ser:txnData>
                 <ser:txnData><xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Beneficiary_Bank/Code" /></ser:txnData>
                 <ser:txnData><xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Beneficiary_Bank/Branch/Br_Code" /></ser:txnData>
-                <ser:txnData><xsl:value-of select="$lookupTable/lookup/disbursalType/code[@value=root/IP/Send_Remitance_Transaction_Request/Delivery_Type]" /></ser:txnData>
+                <ser:txnData><xsl:value-of select="$lookupTable/lookup/disbursalType/code[@value=$disbursalType]" /></ser:txnData>
                 <ser:txnData></ser:txnData>
-                <ser:txnData><xsl:value-of select="$lookupTable/lookup/disbursalType/code[@value=root/IP/Send_Remitance_Transaction_Request/Transaction/Transaction_Purpose]" /></ser:txnData>
+                <ser:txnData><xsl:value-of select="$lookupTable/lookup/purposeCode/code[@value=$purposeCode]" /></ser:txnData>
                 <ser:txnData><xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Remitter/Beneficiary_Relation" /></ser:txnData>
-                <ser:txnData>/'QATAR/'</ser:txnData>
-                <ser:txnData><xsl:value-of select="$lookupTable/lookup/disbursalType/code[@value=root/IP/Send_Remitance_Transaction_Request/Remitter/Source_of_Fund]" /></ser:txnData>
+                <ser:txnData>QATAR</ser:txnData>
+                <ser:txnData><xsl:value-of select="$lookupTable/lookup/disbursalType/code[@value=$fundSource]" /></ser:txnData>
+                <retryCount><xsl:value-of select="root/IP/IP_Header/retryCount" /></retryCount>
             </ser:processTransaction>
         </soapenv:Body>
     </soapenv:Envelope>

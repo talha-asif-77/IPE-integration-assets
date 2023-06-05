@@ -13,7 +13,8 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema"
   "password": "HSWND1J3",
   "agentcode": "ALF"
   "AgentAccountCode":"",
-  "ReferenceNo": "<xsl:value-of select="root/IP/IP_Header/Partner_Ref_No" />"
+  "ReferenceNo": "<xsl:value-of select="root/IP/IP_Header/Partner_Ref_No" />",
+   "retryCount": "<xsl:value-of select="root/IP/IP_Header/retryCount" />"
 }
   </xsl:template>
 </xsl:stylesheet>
