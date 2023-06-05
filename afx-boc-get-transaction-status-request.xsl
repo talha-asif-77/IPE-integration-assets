@@ -19,6 +19,7 @@
                     <tem:AGENTCODE>891</tem:AGENTCODE>
                     <tem:SESSIONID> <xsl:value-of select="concat($convertedDate,'-',root/IP/IP_Header/Partner_Code)" /></tem:SESSIONID>
                     <tem:REFERENCENO><xsl:value-of select="root/IP/IP_Header/Partner_Code"/></tem:REFERENCENO>
+                    <retryCount><xsl:value-of select="root/IP/IP_Header/retryCount" /></retryCount>
                 </tem:objRef>
             </tem:TransactionStatus>
         </soap:Body>
