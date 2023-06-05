@@ -24,14 +24,14 @@
         <Partner_Return_Code> <xsl:value-of select="$Partner_Return_Code"/></Partner_Return_Code>					
         <Partner_Return_Desc> <xsl:value-of select="$Partner_Return_Desc"/></Partner_Return_Desc>					
         <Status></Status>
-
+	<Exact_Response>  <xsl:copy-of select="."/> </Exact_Response>
+	
       </IP_Header>						
       <Get_Remittance_Transaction_Status_Response>				
             <Txn_Type></Txn_Type>			
             <Txn_No></Txn_No>			
             <Txn_Status></Txn_Status>			
             <No_of_Txn></No_of_Txn>			
-                        
             <Response_Status><xsl:value-of select="//TransactionStatusResponse/TransactionStatusResult/TrnsStatus"/></Response_Status>			
 	</Get_Remittance_Transaction_Status_Response>				
 </IP>											
