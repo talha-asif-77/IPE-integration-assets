@@ -32,7 +32,6 @@
              <tem:USERNAME>ALFUAEAPI01</tem:USERNAME>
             <tem:PASSWORD>EIn@0133</tem:PASSWORD>
             <tem:AGENTCODE>891</tem:AGENTCODE>
-		  <retryCount><xsl:value-of select="root/IP/IP_Header/retryCount" /> </retryCount>
             <tem:SESSIONID>
               <xsl:value-of select="concat($convertedDate1,'-',IP/IP_Header/Partner_Code)" />
             </tem:SESSIONID>
@@ -112,6 +111,7 @@
             <tem:ValueDate>
               <xsl:value-of select="$convertedDate3"/>
             </tem:ValueDate>
+		  <retryCount><xsl:value-of select="root/IP/IP_Header/retryCount" /> </retryCount>
           </tem:objProp>
         </tem:CreateTXN>
       </soap:Body>
