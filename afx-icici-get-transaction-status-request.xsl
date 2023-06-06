@@ -53,7 +53,7 @@ exclude-result-prefixes="xs">
         <ICICIReferenceNo></ICICIReferenceNo>
     </Transaction>
    <Signature>
-        <SignatureValue>GSD[
+        <SignatureValue>GSD[/'clientcertria.jks/',/'%Ri@Cert11%/',/'selfsigned/',/'%Ri@Cert11%/',/'SHA256withRSA/',
             <xsl:choose>
                 <xsl:when test="string-length($current-date)>0">
                     <xsl:value-of select="concat($processDateTime,$UploadDate,$c-request, $c-coressp, $c-disbursal)" />
@@ -62,7 +62,7 @@ exclude-result-prefixes="xs">
                     <xsl:value-of select="concat($c-request, $c-coressp, $c-disbursal)" />
                 </xsl:otherwise>
             </xsl:choose>
-            ]
+            ,/'PKCS7/']
         </SignatureValue>
     </Signature>
 
