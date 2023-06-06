@@ -35,7 +35,6 @@
             <No_of_Txn></No_of_Txn>			
             <Response_Status><xsl:value-of select="$Partner_Status"/></Response_Status>			
 	</Get_Remittance_Transaction_Status_Response>				
-</IP>											
 
   </xsl:template>
 </xsl:stylesheet>
