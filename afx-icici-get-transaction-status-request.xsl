@@ -60,9 +60,9 @@ exclude-result-prefixes="xs">
                 </xsl:when>
                 <xsl:otherwise>
                     <xsl:value-of select="concat($c-request, $c-coressp, $c-disbursal)" />
-                </xsl:otherwise>]
+                </xsl:otherwise>
             </xsl:choose>
-            
+            ]
         </SignatureValue>
     </Signature>
 
