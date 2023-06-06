@@ -4,8 +4,14 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema"
 exclude-result-prefixes="xs">
 <xsl:import href="dateTemplate.xsl"/>
 <xsl:output method="html" omit-xml-declaration="yes"/>
+ <xsl:param name="PartnerRequestBody" />
 <xsl:variable name="lookupTable" select="document('sampath-mappingLookup.xml')"/>
 
+  <xsl:template match="@* | node()">
+        <xsl:copy>
+            <xsl:apply-templates select="@* | node()"/>
+        </xsl:copy>
+    </xsl:template>
 
   <xsl:template match="/">
   
@@ -46,22 +52,9 @@ exclude-result-prefixes="xs">
      </xsl:if>
      </xsl:for-each>
 
-
-        <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-
-  <xsl:template match="/">
-    <output>
-      <abcd>
-        <xsl:value-of select="//tag[generate-id() = generate-id(//tag[1])]"/>
-      </abcd>
-      <xyz>
-        <xsl:value-of select="//tag[generate-id() = generate-id(//tag[2])]"/>
-      </xyz>
-    </output>
-  </xsl:template>
-
-</xsl:stylesheet>
 				
+        		<Exact_Response>  <xsl:copy-of select="."/> </Exact_Response>
+        <Partner_Request><xsl:value-of select="$PartnerRequestBody"  disable-output-escaping="yes" /></Partner_Request>	
                   
       </IP_Header>						
     </IP>		
