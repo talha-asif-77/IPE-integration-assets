@@ -53,8 +53,8 @@ exclude-result-prefixes="xs">
         <ICICIReferenceNo></ICICIReferenceNo>
     </Transaction>
    <Signature>
-        <SignatureValue>
-            <xsl:choose>GSD[
+        <SignatureValue>GSD[
+            <xsl:choose>
                 <xsl:when test="string-length($current-date)>0">
                     <xsl:value-of select="concat($processDateTime,$UploadDate,$c-request, $c-coressp, $c-disbursal)" />
                 </xsl:when>
