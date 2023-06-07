@@ -5,7 +5,7 @@ exclude-result-prefixes="xs">
 <xsl:import href="dateTemplate.xsl"/>
 <xsl:output method="xml" omit-xml-declaration="yes"/>
 <xsl:variable name="lookupTable" select="document('icici-mappingLookup.xml')"/>
-<xsl:variable name="country" select="document('CountryCodeMapping.xml')"/>
+<xsl:variable name="country" select="document('countryCodeMapping.xml')"/>
 
 <xsl:template match="/">
 <xsl:variable name="current-date" select="root/IP/IP_Header/Request_Timestamp"/>
