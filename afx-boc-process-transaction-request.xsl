@@ -111,7 +111,9 @@
             <tem:ValueDate>
               <xsl:value-of select="$convertedDate3"/>
             </tem:ValueDate>
-		  <retryCount><xsl:value-of select="root/IP/IP_Header/retryCount" /> </retryCount>
+		<retryCount><xsl:value-of select="root/IP/IP_Header/retryCount" /> </retryCount>
+		<Partner_Ref_No><xsl:value-of select="root/IP/IP_Header/Partner_Ref_No" /></Partner_Ref_No>
+
           </tem:objProp>
         </tem:CreateTXN>
       </soap:Body>
