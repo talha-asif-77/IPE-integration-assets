@@ -43,17 +43,9 @@ exclude-result-prefixes="xs">
         <Business_Return_Code> <xsl:value-of select="$afx-code"/></Business_Return_Code>					
         <Business_Return_Desc> <xsl:value-of select="$lookupTable/lookup/returnDesc/code[@value=$afx-code]"/></Business_Return_Desc>		
 
-        <xsl:for-each select="//processTransactionReturn">
+     			<Partner_Return_Code> <xsl:value-of select="$Partner_Return_Code"/></Partner_Return_Code>
+     			 <Partner_Return_Desc> <xsl:value-of select="$Partner_Return_Desc"/></Partner_Return_Desc>	
 
-     <xsl:if test="processTransactionReturn=preceding::processTransactionReturn[1]">
-     			<Partner_Return_Code> <xsl:value-of select="//processTransactionReturn"/></Partner_Return_Code>
-     </xsl:if>
-     <xsl:if test="processTransactionReturn=preceding::processTransactionReturn[2]">
-     			 <Partner_Return_Desc> <xsl:value-of select="//processTransactionReturn"/></Partner_Return_Desc>	
-     </xsl:if>
-     </xsl:for-each>
-
-				
         		<Exact_Response>  <xsl:copy-of select="."/> </Exact_Response>
             <Partner_Request><xsl:value-of select="$PartnerRequestBody"  disable-output-escaping="yes" /></Partner_Request>	
             <Unique_Id><xsl:value-of select="$Partner_Ref_No" /></Unique_Id>
