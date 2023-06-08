@@ -11,9 +11,9 @@
                     </ser:txnPin>
                     <ser:companyId>35</ser:companyId>
                     <ser:accessCode>aG9heA==</ser:accessCode>
-                    <retryCount>0</retryCount>
-                    <Partner_Ref_No><xsl:value-of select="root/IP/IP_Header/Partner_Ref_No" /></Partner_Ref_No>
                 </ser:inquireTransaction>
+                <retryCount>0</retryCount>
+                    <Partner_Ref_No><xsl:value-of select="root/IP/IP_Header/Partner_Ref_No" /></Partner_Ref_No>
             </soapenv:Body>
         </soapenv:Envelope>
     </xsl:template>
