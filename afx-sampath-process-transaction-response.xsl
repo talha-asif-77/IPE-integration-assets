@@ -16,16 +16,10 @@ exclude-result-prefixes="xs">
     </xsl:template>
 
   <xsl:template match="/">
-  
-  <xsl:variable name="convertedDate">
-             <xsl:call-template name="convertDateTime-to-ISO">
-                          <xsl:with-param name="inputDateTime" select="root/IP/IP_Header/Request_Timestamp" />
-            </xsl:call-template>
- </xsl:variable>
 
 
-  <xsl:variable name="Partner_Return_Code"  select="//processTransactionReturn[not(preceding-sibling::processTransactionReturn)]"/> 
-  <xsl:variable name="Partner_Return_Desc"  select="//processTransactionReturn[not(preceding-sibling::processTransactionReturn)]"/>
+  <xsl:variable name="Partner_Return_Code"  select="//processTransactionReturn"/> 
+  <xsl:variable name="Partner_Return_Desc"  select="//processTransactionReturn"/>
   <xsl:variable name="afx-code" select="$lookupTable/lookup/returnCode/code[@value=$Partner_Return_Code]"/>
     <IP>							
       <IP_Header>						
