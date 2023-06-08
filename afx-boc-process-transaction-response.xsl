@@ -20,7 +20,7 @@
    <IP>							
       <IP_Header>						
         <CIF></CIF>					
-        <Partner_Ref_No> <xsl:value-of select="$Partner_Ref_No1"/></Partner_Ref_No>
+        <Partner_Ref_No> <xsl:value-of select="$Partner_Ref_No"/></Partner_Ref_No>
   			
         <Partner_Code></Partner_Code>					
         <Transaction_No></Transaction_No>					
