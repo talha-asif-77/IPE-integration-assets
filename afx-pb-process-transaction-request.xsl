@@ -56,7 +56,7 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema"
   "CustomerAddr2": "<xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Remitter/Address2" />",
   "CustomerAddr3": "",
   "CustomerDOB": "<xsl:value-of select="$DOB" />",
-  "CustomerIDType":"<xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Remitter/Identity_Type" />",
+  "CustomerIDType": "<xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Remitter/Identity_Type" />",
   "CustomerIDNO": "<xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Remitter/Identity_No" />",
   "CustomerIDIssDate": "<xsl:value-of select="$Rem_Identity_Issue" />",
   "CustomerIDExpDate": "<xsl:value-of select="$Rem_Identity_Expire" />",
@@ -83,7 +83,7 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema"
   "username": "userALF001",
   "password": "HSWND1J3",
   "agentcode": "ALF",
-  "retryCount": <xsl:value-of select="root/IP/IP_Header/retryCount" />
+  "retryCount": "<xsl:value-of select="root/IP/IP_Header/retryCount" />"
 }
   </xsl:template>
 </xsl:stylesheet>
