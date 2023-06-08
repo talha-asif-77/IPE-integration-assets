@@ -42,11 +42,11 @@ exclude-result-prefixes="xs">
                 <ser:txnData><xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Beneficiary_Bank/Code" /></ser:txnData>
                 <ser:txnData><xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Beneficiary_Bank/Branch/Br_Code" /></ser:txnData>
                 <ser:txnData><xsl:value-of select="$lookupTable/lookup/processTransaction/disbursalType/code[@value=$disbursalType]" /></ser:txnData>
-                <ser:txnData></ser:txnData>
-                <ser:txnData><xsl:value-of select="$lookupTable/lookup/purposeCode/code[@value=$purposeCode]" /></ser:txnData>
+                <ser:txnData><xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Transaction/Transaction_Message" /></ser:txnData>
+                <ser:txnData><xsl:value-of select="$lookupTable/lookup/processTransaction/purposeCode/code[@value=$purposeCode]" /></ser:txnData>
                 <ser:txnData><xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Remitter/Beneficiary_Relation" /></ser:txnData>
-                <ser:txnData>QATAR</ser:txnData>
-                <ser:txnData><xsl:value-of select="$lookupTable/lookup/disbursalType/code[@value=$fundSource]" /></ser:txnData>
+                <ser:txnData>UNITED ARAB EMIRATES</ser:txnData>
+                <ser:txnData><xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Remitter/Source_of_Fund" /></ser:txnData>
                 <retryCount><xsl:value-of select="root/IP/IP_Header/retryCount" /></retryCount>
                 <Partner_Ref_No><xsl:value-of select="root/IP/IP_Header/Partner_Ref_No" /></Partner_Ref_No>
             </ser:processTransaction>
