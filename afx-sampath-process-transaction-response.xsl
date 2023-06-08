@@ -5,6 +5,8 @@ exclude-result-prefixes="xs">
 <xsl:import href="dateTemplate.xsl"/>
 <xsl:output method="html" omit-xml-declaration="yes"/>
  <xsl:param name="PartnerRequestBody" />
+ <xsl:param name="Partner_Ref_No" />
+
 <xsl:variable name="lookupTable" select="document('sampath-mappingLookup.xml')"/>
 
   <xsl:template match="@* | node()">
@@ -41,8 +43,7 @@ exclude-result-prefixes="xs">
         <Business_Return_Code> <xsl:value-of select="$afx-code"/></Business_Return_Code>					
         <Business_Return_Desc> <xsl:value-of select="$lookupTable/lookup/returnDesc/code[@value=$afx-code]"/></Business_Return_Desc>		
 
-         <Exact_Response>  <xsl:copy-of select="."/> </Exact_Response>
-      <xsl:for-each select="//processTransactionReturn">
+        <xsl:for-each select="//processTransactionReturn">
 
      <xsl:if test="processTransactionReturn=preceding::processTransactionReturn[1]">
      			<Partner_Return_Code> <xsl:value-of select="//processTransactionReturn"/></Partner_Return_Code>
@@ -54,7 +55,8 @@ exclude-result-prefixes="xs">
 
 				
         		<Exact_Response>  <xsl:copy-of select="."/> </Exact_Response>
-        <Partner_Request><xsl:value-of select="$PartnerRequestBody"  disable-output-escaping="yes" /></Partner_Request>	
+            <Partner_Request><xsl:value-of select="$PartnerRequestBody"  disable-output-escaping="yes" /></Partner_Request>	
+            <Unique_Id><xsl:value-of select="$Partner_Ref_No" /></Unique_Id>
                   
       </IP_Header>						
     </IP>		

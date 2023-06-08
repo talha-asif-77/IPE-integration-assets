@@ -6,7 +6,6 @@ exclude-result-prefixes="xs">
 <xsl:output method="html" omit-xml-declaration="yes"/>
 <xsl:variable name="lookupTable" select="document('sampath-mappingLookup.xml')"/>
 
-
   <xsl:template match="/">
   
   <xsl:variable name="convertedDate">
@@ -42,13 +41,14 @@ exclude-result-prefixes="xs">
                 <ser:txnData><xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Beneficiary/Account_No" /></ser:txnData>
                 <ser:txnData><xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Beneficiary_Bank/Code" /></ser:txnData>
                 <ser:txnData><xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Beneficiary_Bank/Branch/Br_Code" /></ser:txnData>
-                <ser:txnData><xsl:value-of select="$lookupTable/lookup/disbursalType/code[@value=$disbursalType]" /></ser:txnData>
+                <ser:txnData><xsl:value-of select="$lookupTable/lookup/processTransaction/disbursalType/code[@value=$disbursalType]" /></ser:txnData>
                 <ser:txnData></ser:txnData>
                 <ser:txnData><xsl:value-of select="$lookupTable/lookup/purposeCode/code[@value=$purposeCode]" /></ser:txnData>
                 <ser:txnData><xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Remitter/Beneficiary_Relation" /></ser:txnData>
                 <ser:txnData>QATAR</ser:txnData>
                 <ser:txnData><xsl:value-of select="$lookupTable/lookup/disbursalType/code[@value=$fundSource]" /></ser:txnData>
                 <retryCount><xsl:value-of select="root/IP/IP_Header/retryCount" /></retryCount>
+                <Partner_Ref_No><xsl:value-of select="root/IP/IP_Header/Partner_Ref_No" /></Partner_Ref_No>
             </ser:processTransaction>
         </soapenv:Body>
     </soapenv:Envelope>

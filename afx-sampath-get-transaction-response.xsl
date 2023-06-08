@@ -2,7 +2,8 @@
   <xsl:output method="html"  indent="yes" omit-xml-declaration="yes"/>
    <xsl:param name="PartnerRequestBody" />
   <xsl:variable name="lookupTable" select="document('sampath-mappingLookup.xml')"/>
-
+  <xsl:param name="Partner_Ref_No" />
+  
   <!-- identity template to copy all nodes and attributes -->
     <xsl:template match="@* | node()">
         <xsl:copy>
@@ -41,7 +42,8 @@
 							
 		<Response_Status></Response_Status>
 		<Exact_Response>  <xsl:copy-of select="."/> </Exact_Response>
-        <Partner_Request><xsl:value-of select="$PartnerRequestBody"  disable-output-escaping="yes" /></Partner_Request>					
+    <Partner_Request><xsl:value-of select="$PartnerRequestBody"  disable-output-escaping="yes" /></Partner_Request>	
+    <Unique_Id><xsl:value-of select="$Partner_Ref_No" /></Unique_Id>			
 	</Get_Remittance_Transaction_Status_Response>						
 </IP>							
 
