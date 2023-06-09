@@ -1,5 +1,7 @@
 <xsl:stylesheet version="1.0"  xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:temp="http://tempuri.org/">
   <xsl:output method="html"  indent="yes" omit-xml-declaration="yes"/>
+  <xsl:param name="PartnerRequestBody" />
+     <xsl:param name="Partner_Ref_No2" />
   <xsl:variable name="lookupTable" select="document('pb-mappingLookup.xml')"/>
 
   <xsl:template match="/">
@@ -26,12 +28,15 @@
         <Partner_Return_Desc> <xsl:value-of select="$Partner_Return_Desc"/></Partner_Return_Desc>					
         <Status></Status>		  
         <Exact_Response>  <xsl:copy-of select="."/> </Exact_Response>
+        <Partner_Request><xsl:value-of select="$PartnerRequestBody"  disable-output-escaping="yes" /></Partner_Request>
+         	<Unique_Id><xsl:value-of select="$Partner_Ref_No2" /></Unique_Id>
+          
       </IP_Header>						
 
       	<Get_Remittance_Transaction_Status_Response>						
           <Txn_Type></Txn_Type>					
           <Txn_No></Txn_No>					
-          <Txn_Status><xsl:variable name="Partner_Return_Code" select="//*[local-name()='TransactionStatus']" /></Txn_Status>					
+          <Txn_Status><xsl:value-of name="Partner_Return_Code" select="//*[local-name()='TransactionStatus']" /></Txn_Status>					
           <No_of_Txn></No_of_Txn>					
                     
           <Response_Status></Response_Status>					
