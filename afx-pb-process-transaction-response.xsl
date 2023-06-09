@@ -1,7 +1,7 @@
 <xsl:stylesheet version="1.0"  xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:temp="http://tempuri.org/">
   <xsl:output method="html"  indent="yes" omit-xml-declaration="yes"/>
     <xsl:param name="PartnerRequestBody" />
-       <xsl:param name="Partner_Reference_No2" />
+       <xsl:param name="Partner_Ref_No2" />
 
   <xsl:variable name="lookupTable" select="document('pb-mappingLookup.xml')"/>
 
