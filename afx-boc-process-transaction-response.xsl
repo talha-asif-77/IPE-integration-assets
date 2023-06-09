@@ -36,7 +36,7 @@
         <Partner_Return_Code> <xsl:value-of select="$Partner_Return_Code"/></Partner_Return_Code>					
         <Partner_Return_Desc> <xsl:value-of select="$Partner_Return_Desc"/></Partner_Return_Desc>					
         <Exact_Response>  <xsl:copy-of select="."/> </Exact_Response>
-	<Partner_Request><xsl:value-of select="$PartnerRequestBody"  disable-output-escaping="yes"  omit-xml-declaration="yes"/></Partner_Request>
+	<Partner_Request><xsl:value-of select="$PartnerRequestBody"  disable-output-escaping="yes" /></Partner_Request>
 	<Unique_Id><xsl:value-of select="$Partner_Ref_No" /></Unique_Id>
       </IP_Header>						
      </IP>				
