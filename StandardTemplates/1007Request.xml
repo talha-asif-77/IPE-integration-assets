@@ -1,0 +1,15 @@
+<IP>							
+	<IP_Header>						
+		<CIF></CIF>					
+		<Partner_Ref_No></Partner_Ref_No>					
+		<Partner_Code></Partner_Code>					
+		<Operation_Type></Operation_Type>					
+		<Request_Timestamp></Request_Timestamp>					
+		<Response_Timestamp></Response_Timestamp>					
+		<retryCount></retryCount>					
+	</IP_Header>						
+	<Get_Remittance_Transaction_Status_Request>						
+		<Transaction_No></Transaction_No>					
+		<Delivery_Type></Delivery_Type>					
+	</Get_Remittance_Transaction_Status_Request>						
+</IP>							
