@@ -1,0 +1,17 @@
+<IP>
+    <IP_Header>
+        <Partner_Ref_No></Partner_Ref_No>
+        <Partner_Code></Partner_Code>
+        <Transaction_No></Transaction_No>
+        <Operation_Type></Operation_Type>
+        <Terminal_Id></Terminal_Id>
+        <ReferenceNo></ReferenceNo>
+        <Transaction_Status></Transaction_Status>
+        <Request_Timestamp></Request_Timestamp>
+        <Response_Timestamp></Response_Timestamp>
+        <Business_Return_Code></Business_Return_Code>
+        <Business_Return_Desc></Business_Return_Desc>
+        <Partner_Return_Code></Partner_Return_Code>
+        <Partner_Return_Desc></Partner_Return_Desc>
+    </IP_Header>
+</IP>
