@@ -20,6 +20,8 @@
                     <tem:SESSIONID> <xsl:value-of select="concat($convertedDate,'-',root/IP/IP_Header/Partner_Code)" /></tem:SESSIONID>
                     <tem:REFERENCENO><xsl:value-of select="root/IP/IP_Header/Partner_Code"/></tem:REFERENCENO>
                     <retryCount><xsl:value-of select="root/IP/IP_Header/retryCount" /></retryCount>
+                    <Partner_Ref_No><xsl:value-of select="root/IP/IP_Header/Partner_Ref_No" /></Partner_Ref_No>
+
                 </tem:objRef>
             </tem:TransactionStatus>
         </soap:Body>

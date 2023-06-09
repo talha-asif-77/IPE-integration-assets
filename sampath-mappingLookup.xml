@@ -1,47 +1,230 @@
 <lookup>
- 
-    <disbursalType>
-            <code value="PU">POI</code>	
-            <code value="SB">SBA</code>	
-            <code value="OB">SLI</code>	
+    <processTransaction>
+        <returnCode>
+            <code value='999'>0</code>	
+            <code value='0'>0</code>	
+            <code value='311'>801000</code>	
+            <code value='306'>201041</code>	
+            <code value='114'>201041</code>	
+            <code value=''>801099</code>	
+            <code value='U'>0</code>	
+            <code value='N'>0</code>	
+            <code value='S'>0</code>	
+            <code value='V'>0</code>	
+            <code value='L'>0</code>	
+            <code value='D'>801099</code>	
+            <code value='X'>801099</code>	
+            <code value='R'>801099</code>	
+            <code value='P'>801099</code>	
+            <code value='O'>801099</code>	
+            <code value='404'>0</code>	
+            <code value='0'>0</code>	
+            <code value='311'>0</code>	
+            <code value='115'>801099</code>	
+            <code value='121'>801099</code>	
+            <code value='201'>801099</code>	
+            <code value='202'>801099</code>	
+            <code value='301'>801099</code>	
+            <code value='302'>801099</code>	
+            <code value='303'>801099</code>	
+            <code value='304'>801099</code>	
+            <code value='305'>801099</code>	
+            <code value='306'>801099</code>	
+            <code value='307'>801099</code>	
+            <code value='308'>801099</code>	
+            <code value='309'>801099</code>	
+            <code value='310'>801099</code>	
+            <code value='402'>801099</code>	
+            <code value='403'>801099</code>	
+            <code value='902'>801099</code>	
+            <code value='904'>801099</code>	
+            <code value='909'>801099</code>	
+            <code value='999'>801099</code>	
+            <code value='401'>801099</code>	
+            <code value='116'>801099</code>	
+            <code value='906'>801099</code>	
+            <code value='119'>801099</code>
+        </returnCode>
+
+        <disbursalType>
+            <code value='OB'>SLI</code>	
+            <code value='SB'>SBA</code>	
+            <code value='PU'>POI</code>		
         </disbursalType>
 
         <purposeCode>
-            <code value='INHERITANCE'>19</code>
-            <code value='INVESTMENT'>4</code>
-            <code value='SETTLEMENT OF PERSONAL PURCHASE'>10</code>
-            <code value='Military service allowances'>20</code>
-            <code value='Installments'>20</code>
-            <code value='Family Support'>1</code>
-            <code value='Savings'>2</code>
-            <code value='Electronic Appliances Purchase'>20</code>
-            <code value='Medical Expenses'>13</code>
-            <code value='Consultant Fees'>20</code>
-            <code value='Vehicle Purchase'>20</code>
-            <code value='Subsistences'>20</code>
-            <code value='Construction Building Material'>20</code>
-            <code value='Trade Related Payment'>9</code>
-            <code value='Computer Accessories Purchase'>20</code>
-            <code value='Auto Accessories  Purchase'>20</code>
-            <code value='Travelling Expenses'>16</code>
-            <code value='Hotel Booking'>15</code>
-            <code value='Gift'>8</code>
-            <code value='Communication Service'>20</code>
-            <code value='Cost Of Transport And Shipping'>20</code>
+            <code value='Savings'>1</code>
+            <code value='INVESTMENT'>2</code>
+            <code value='Family Support'>3</code>
+            <code value='Realstate Purchase'>4</code>
             <code value='Education Expenses'>5</code>
-            <code value='Payment For Material Purcahse'>10</code>
-            <code value='Rent Payment'>17</code>
-            <code value='Salary Payment'>14</code>
+            <code value='Hotel Booking'>6</code>
+            <code value='Travelling Expenses'>7</code>
+            <code value='Trade Related Payment'>8</code>
+            <code value='Payment For Material Purchase'>9</code>
+            <code value='Medical Expenses'>12</code>
             <code value='Loan Payment'>11</code>
-            <code value='Freight Chargse - Freight Charges'>20</code>
-            <code value='Realstate Purchase'>18</code>
-            <code value='Freight Handling Charges'>20</code>
-            <code value='Imports'>20</code>
-            <code value='Exports'>20</code>
-            <code value='Online Shopping'>10</code>
-            <code value='Government Fees'>20</code>
-            <code value='Insurance Services'>12</code>
+            <code value='Government Fees'>10</code>
         </purposeCode>
+
+    </processTransaction>
+
+    <cancelTransaction>
+         <returnCode>
+            <code value='0'>0</code>
+            <code value='U'>0</code>
+            <code value='N'>0</code>
+            <code value='S'>0</code>
+            <code value='V'>0</code>
+            <code value='L'>0</code>
+            <code value='D'>801099</code>
+            <code value='X'>801099</code>
+            <code value='R'>801099</code>
+            <code value='P'>801099</code>
+            <code value='O'>801099</code>
+            <code value='0'>0</code>
+            <code value='311'>0</code>
+            <code value='115'>801099</code>
+            <code value='121'>801099</code>
+            <code value='201'>801099</code>
+            <code value='202'>801099</code>
+            <code value='301'>801099</code>
+            <code value='302'>801099</code>
+            <code value='303'>801099</code>
+            <code value='304'>801099</code>
+            <code value='305'>801099</code>
+            <code value='306'>801099</code>
+            <code value='307'>801099</code>
+            <code value='308'>801099</code>
+            <code value='309'>801099</code>
+            <code value='310'>801099</code>
+            <code value='402'>801099</code>
+            <code value='403'>801099</code>
+            <code value='902'>801099</code>
+            <code value='904'>801099</code>
+            <code value='909'>801099</code>
+            <code value='999'>801099</code>
+            <code value='401'>801099</code>
+            <code value='116'>801099</code>
+            <code value='906'>801099</code>
+            <code value='119'>801099</code>
+         </returnCode>
+    </cancelTransaction>
+
+    <getTransactionStatus>
+        <returnCode>
+            <code value=''>0</code>
+            <code value='0'>0</code>
+            <code value='311'>0</code>
+            <code value='115'>801099</code>
+            <code value='121'>801099</code>
+            <code value='201'>801099</code>
+            <code value='202'>801099</code>
+            <code value='301'>801099</code>
+            <code value='302'>801099</code>
+            <code value='303'>801099</code>
+            <code value='304'>801099</code>
+            <code value='305'>801099</code>
+            <code value='306'>801099</code>
+            <code value='307'>801099</code>
+            <code value='308'>801099</code>
+            <code value='309'>801099</code>
+            <code value='310'>801099</code>
+            <code value='402'>801099</code>
+            <code value='403'>801099</code>
+            <code value='902'>801099</code>
+            <code value='904'>801099</code>
+            <code value='909'>801099</code>
+            <code value='999'>801099</code>
+            <code value='401'>801099</code>
+            <code value='116'>801099</code>
+            <code value='906'>801099</code>
+            <code value='119'>801099</code>
+            <code value='U'>0</code>
+            <code value='N'>0</code>
+            <code value='S'>0</code>
+            <code value='V'>0</code>
+            <code value='L'>0</code>
+            <code value='D'>801099</code>
+            <code value='X'>801099</code>
+            <code value='R'>801099</code>
+            <code value='P'>801099</code>
+            <code value='O'>801099</code>		
+        </returnCode>
+    </getTransactionStatus>
+
+    <validateBeneficiaryAccount>
+        <returnCode>
+            <code value=''>0</code>
+            <code value='U'>0</code>
+            <code value='N'>0</code>
+            <code value='S'>0</code>
+            <code value='V'>0</code>
+            <code value='L'>0</code>
+            <code value='D'>801099</code>
+            <code value='X'>801099</code>
+            <code value='R'>801099</code>
+            <code value='P'>801099</code>
+            <code value='O'>801099</code>
+            <code value='0'>0</code>
+            <code value='311'>0</code>
+            <code value='115'>801099</code>
+            <code value='121'>801099</code>
+            <code value='201'>801099</code>
+            <code value='202'>801099</code>
+            <code value='301'>801099</code>
+            <code value='302'>801099</code>
+            <code value='303'>801099</code>
+            <code value='304'>801099</code>
+            <code value='305'>801099</code>
+            <code value='306'>801099</code>
+            <code value='307'>801099</code>
+            <code value='308'>801099</code>
+            <code value='309'>801099</code>
+            <code value='310'>801099</code>
+            <code value='402'>801099</code>
+            <code value='403'>801099</code>
+            <code value='902'>801099</code>
+            <code value='904'>801099</code>
+            <code value='909'>801099</code>
+            <code value='999'>801099</code>
+            <code value='401'>801099</code>
+            <code value='116'>801099</code>
+            <code value='906'>801099</code>
+            <code value='119'>801099</code>
+            <code value='0'>0</code>
+            <code value='311'>0</code>
+            <code value='115'>801099</code>
+            <code value='121'>801099</code>
+            <code value='201'>801099</code>
+            <code value='202'>801099</code>
+            <code value='301'>801099</code>
+            <code value='302'>801099</code>
+            <code value='303'>801099</code>
+            <code value='304'>801099</code>
+            <code value='305'>801099</code>
+            <code value='306'>801099</code>
+            <code value='307'>801099</code>
+            <code value='308'>801099</code>
+            <code value='309'>801099</code>
+            <code value='310'>801099</code>
+            <code value='402'>801099</code>
+            <code value='403'>801099</code>
+            <code value='902'>801099</code>
+            <code value='904'>801099</code>
+            <code value='909'>801099</code>
+            <code value='999'>801099</code>
+            <code value='401'>801099</code>
+            <code value='116'>801099</code>
+            <code value='906'>801099</code>
+            <code value='119'>801099</code>
+        </returnCode>
+
+        <accountStatus>
+            <code value='0'>Valid</code>
+            <code value=''>Invalid</code>
+        </accountStatus>
+    </validateBeneficiaryAccount>
 
         <returnDesc>
             <code value="801047">Partial Success for rates</code>	
@@ -100,46 +283,5 @@
             <code value="801101">Partial Cancelation Succes</code>	
         </returnDesc>
 
-        <returnCode>
-            <code value='0'>000</code>
-            <code value='101'>201018</code>
-            <code value='114'>801100</code>
-            <code value='115'>801100</code>
-            <code value='116'>801100</code>
-            <code value='119'>801100</code>
-            <code value='180'>801100</code>
-            <code value='201'>801099</code>
-            <code value='202'>801099</code>
-            <code value='300'>801099</code>
-            <code value='301'>801099</code>
-            <code value='302'>801099</code>
-            <code value='303'>801099</code>
-            <code value='304'>801099</code>
-            <code value='305'>801099</code>
-            <code value='306'>201034</code>
-            <code value='307'>801099</code>
-            <code value='308'>801099</code>
-            <code value='309'>801099</code>
-            <code value='310'>801099</code>
-            <code value='311'>801099</code>
-            <code value='312'>801099</code>
-            <code value='313'>801099</code>
-            <code value='314'>801099</code>
-            <code value='315'>801099</code>
-            <code value='316'>801099</code>
-            <code value='401'>801099</code>
-            <code value='402'>801099</code>
-            <code value='403'>801099</code>
-            <code value='404'>801099</code>
-            <code value='405'>801099</code>
-            <code value='902'>801099</code>
-            <code value='904'>801099</code>
-            <code value='906'>801099</code>
-            <code value='909'>801099</code>
-            <code value='996'>801099</code>
-            <code value='997'>801099</code>
-            <code value='998'>801099</code>
-            <code value='999'>801099</code>
-        </returnCode>   
-
 </lookup>
+	
