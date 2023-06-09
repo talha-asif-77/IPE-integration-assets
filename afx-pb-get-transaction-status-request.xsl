@@ -14,7 +14,8 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema"
   "agentcode": "ALF"
   "AgentAccountCode":"",
   "ReferenceNo": "<xsl:value-of select="root/IP/IP_Header/Partner_Ref_No" />",
-   "retryCount": "<xsl:value-of select="root/IP/IP_Header/retryCount" />"
+   "retryCount": "<xsl:value-of select="root/IP/IP_Header/retryCount" />",
+   "Partner_Ref_No": "<xsl:value-of select="root/IP/IP_Header/Partner_Ref_No" />"
 }
   </xsl:template>
 </xsl:stylesheet>
