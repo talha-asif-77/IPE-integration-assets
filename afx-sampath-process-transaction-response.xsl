@@ -21,6 +21,7 @@ exclude-result-prefixes="xs">
   <xsl:variable name="Partner_Return_Code"  select="//processTransactionReturn"/> 
   <xsl:variable name="Partner_Return_Desc"  select="//processTransactionReturn"/>
   <xsl:variable name="afx-code" select="$lookupTable/lookup/returnCode/code[@value=$Partner_Return_Code]"/>
+   <root>
     <IP>							
       <IP_Header>						
         <CIF></CIF>					
@@ -45,6 +46,6 @@ exclude-result-prefixes="xs">
             <Unique_Id><xsl:value-of select="$Partner_Ref_No" /></Unique_Id>
                   
       </IP_Header>						
-    </IP>		
+    </IP>		</root>
   </xsl:template>
 </xsl:stylesheet>
