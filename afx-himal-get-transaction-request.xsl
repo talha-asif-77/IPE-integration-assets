@@ -25,7 +25,7 @@
             <AgentID xsi:type="xsd:string">114</AgentID>
             <!-- Map the token_value field -->
             <token_value xsi:type="xsd:string">alF@R3614</token_value>
-            <retryCount><xsl:value-of select="root/IP/IP_Header/retryCount" /></retryCount>
+          
           </soapObjects>
         </ns1860:GetTxnStatus>
       </SOAP-ENV:Body>
