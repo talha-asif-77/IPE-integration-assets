@@ -1,4 +1,4 @@
-<xsl:stylesheet version="1.0"  xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:temp="http://tempuri.org/">
+<xsl:stylesheet version="1.0"  xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"  xmlns:ser="http://service.ws.erm.sampath">
   <xsl:output method="html"  indent="yes" omit-xml-declaration="yes"/>
    <xsl:param name="PartnerRequestBody" />
   <xsl:variable name="lookupTable" select="document('sampath-mappingLookup.xml')"/>
@@ -16,8 +16,7 @@
   <xsl:variable name="Partner_Return_Code" select="//*[local-name()='recStatus']" />
   <xsl:variable name="Partner_Return_Desc" select="//*[local-name()='msgText']" />
   <xsl:variable name="afx-code" select="$lookupTable/lookup/getTransactionStatus/returnCode/code[@value=$Partner_Return_Code]"/>
-    <root>
-	  <IP>							
+    <IP>							
 	<IP_Header>						
 		<CIF></CIF>					
 		<Partner_Ref_No></Partner_Ref_No>					
@@ -47,6 +46,6 @@
     <Unique_Id><xsl:value-of select="$Partner_Ref_No" /></Unique_Id>			
 	</Get_Remittance_Transaction_Status_Response>						
 </IP>							
-</root>
+
   </xsl:template>
 </xsl:stylesheet>

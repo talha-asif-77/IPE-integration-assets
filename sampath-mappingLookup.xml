@@ -3,6 +3,7 @@
         <returnCode>
             <code value='999'>0</code>	
             <code value='0'>0</code>	
+            <code value="101">801099</code>
             <code value='311'>801000</code>	
             <code value='306'>201041</code>	
             <code value='114'>201041</code>	
@@ -116,6 +117,7 @@
             <code value=''>0</code>
             <code value='0'>0</code>
             <code value='311'>0</code>
+            <code value="101">801099</code>
             <code value='115'>801099</code>
             <code value='121'>801099</code>
             <code value='201'>801099</code>
@@ -140,15 +142,16 @@
             <code value='116'>801099</code>
             <code value='906'>801099</code>
             <code value='119'>801099</code>
-            <code value='U'>0</code>
-            <code value='N'>0</code>
-            <code value='S'>0</code>
-            <code value='V'>0</code>
-            <code value='L'>0</code>
-            <code value='D'>801099</code>
-            <code value='X'>801099</code>
-            <code value='R'>801099</code>
-            <code value='P'>801099</code>
+            <code value=''>801099</code>	
+            <code value='U'>0</code>	
+            <code value='N'>0</code>	
+            <code value='S'>0</code>	
+            <code value='V'>0</code>	
+            <code value='L'>0</code>	
+            <code value='D'>801099</code>	
+            <code value='X'>801099</code>	
+            <code value='R'>801099</code>	
+            <code value='P'>801099</code>	
             <code value='O'>801099</code>		
         </returnCode>
     </getTransactionStatus>
