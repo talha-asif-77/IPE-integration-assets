@@ -20,7 +20,7 @@ exclude-result-prefixes="xs">
 
   <xsl:variable name="Partner_Return_Code"  select="//*[local-name()='processTransactionReturn']" /> 
   <xsl:variable name="Partner_Return_Desc"  select="//*[local-name()='processTransactionReturn']" /> 
-  <xsl:variable name="afx-code" select="$lookupTable/lookup/processTransaction/returnCode/code[@value=$Partner_Return_Code]"/>
+  <xsl:variable name="afx-code" select="$lookupTable/lookup/returnCode/code[@value=$Partner_Return_Code]"/>
     <root>
     <IP>							
       <IP_Header>						
