@@ -18,7 +18,7 @@ exclude-result-prefixes="xs">
         </xsl:copy>
     </xsl:template>
 	<xsl:template match="/">
-
+<root>
 <IP>						
     <IP_Header>					
 		<Partner_Ref_No><xsl:value-of select="TrnOrderAck/EHReferenceNo" /></Partner_Ref_No>				
@@ -44,6 +44,6 @@ exclude-result-prefixes="xs">
 		<Unique_Id><xsl:value-of select="$Partner_Ref_No" /></Unique_Id>
 	</IP_Header>					
 </IP>
-						
+		</root>				
 	</xsl:template>
 </xsl:stylesheet>

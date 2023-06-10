@@ -13,9 +13,10 @@
   <xsl:template match="/">
 
 
-  <xsl:variable name="Partner_Return_Code" select="TrnOrderAck/AckStatus" />
-  <xsl:variable name="Partner_Return_Desc" select="TrnOrderAck/Reason" />
+  <xsl:variable name="Partner_Return_Code" select="TrnInquiryResponse/Response/TrnStatus" />
+  <xsl:variable name="Partner_Return_Desc" select="TrnInquiryResponse/Response/StatusDescription" />
   <xsl:variable name="afx-code" select="$lookupTable/lookup/processTransaction/returnCode/code[@value=$Partner_Return_Code]"/>
+   <root>
     <IP>							
       <IP_Header>						
         <CIF></CIF>					
@@ -23,11 +24,11 @@
         <Transaction_No></Transaction_No>					
         <Operation_Type></Operation_Type>					
         <Terminal_Id></Terminal_Id>					
-        <ReferenceNo> <xsl:value-of select="TrnOrderAck/correspondentid" /></ReferenceNo>				
+        <ReferenceNo> <xsl:value-of select="TrnInquiryResponse/Response/correspondentid" /></ReferenceNo>				
         <Transaction_Status> </Transaction_Status>				
         <Request_Timestamp></Request_Timestamp>					
-        <Response_Timestamp><xsl:value-of select="TrnOrderAck/ProcessDateTime" /></Response_Timestamp>					
-        <Partner_Ref_No> <xsl:value-of select="TrnOrderAck/EHReferenceNo" /></Partner_Ref_No> 
+        <Response_Timestamp><xsl:value-of select="TrnInquiryResponse/Response/ResponseDateTime" /></Response_Timestamp>					
+        <Partner_Ref_No> <xsl:value-of select="TrnInquiryResponse/Response/CorrespondentReferenceNo" /></Partner_Ref_No> 
 
         <Business_Return_Code> <xsl:value-of select="$afx-code"/></Business_Return_Code>					
         <Business_Return_Desc> <xsl:value-of select="$lookupTable/lookup/returnDesc/code[@value=$afx-code]"/></Business_Return_Desc>					
@@ -48,5 +49,6 @@
           <Response_Status></Response_Status>					
         </Get_Remittance_Transaction_Status_Response>	
     </IP>		
+    </root>
   </xsl:template>
 </xsl:stylesheet>
