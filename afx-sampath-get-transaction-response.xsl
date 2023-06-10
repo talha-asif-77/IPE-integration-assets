@@ -47,6 +47,6 @@
     <Unique_Id><xsl:value-of select="$Partner_Ref_No" /></Unique_Id>			
 	</Get_Remittance_Transaction_Status_Response>						
 </IP>							
-<root>
+</root>
   </xsl:template>
 </xsl:stylesheet>
