@@ -6,23 +6,23 @@
   <xsl:template match="/">
   <xsl:variable name="convertedDate1">
              <xsl:call-template name="convertDateTime-to-YYYYMMDDHHMMSS">
-                          <xsl:with-param name="inputDateTime" select="IP/IP_Header/Request_Timestamp" />
+                          <xsl:with-param name="inputDateTime" select="root/IP/IP_Header/Request_Timestamp" />
             </xsl:call-template>
  </xsl:variable>
  <xsl:variable name="convertedDate2">
              <xsl:call-template name="convertDateTime-to-DD-MM-YYYY">
-                          <xsl:with-param name="inputDateTime" select="IP/Send_Remitance_Transaction_Request/Remitter/Identity_Expiry_Date" />
+                          <xsl:with-param name="inputDateTime" select="root/IP/Send_Remitance_Transaction_Request/Remitter/Identity_Expiry_Date" />
             </xsl:call-template>
  </xsl:variable>
  <xsl:variable name="convertedDate3">
              <xsl:call-template name="convertDateTime-to-dd-MMM-yyyy">
-                          <xsl:with-param name="inputDateTime" select="IP/IP_Header/Request_Timestamp" />
+                          <xsl:with-param name="inputDateTime" select="root/IP/IP_Header/Request_Timestamp" />
             </xsl:call-template>
  </xsl:variable>
-  <xsl:variable name="Delivery_Type" select="IP/Send_Remitance_Transaction_Request/Delivery_Type"/>
-  <xsl:variable name="Identity_Type" select="IP/Send_Remitance_Transaction_Request/Remitter/Identity_Type"/>
-  <xsl:variable name="Source_of_Fund" select="IP/Send_Remitance_Transaction_Request/Remitter/Source_of_Fund"/>
-  <xsl:variable name="Transaction_Purpose" select="IP/Send_Remitance_Transaction_Request/Transaction/Transaction_Purpose"/>
+  <xsl:variable name="Delivery_Type" select="root/IP/Send_Remitance_Transaction_Request/Delivery_Type"/>
+  <xsl:variable name="Identity_Type" select="root/IP/Send_Remitance_Transaction_Request/Remitter/Identity_Type"/>
+  <xsl:variable name="Source_of_Fund" select="root/IP/Send_Remitance_Transaction_Request/Remitter/Source_of_Fund"/>
+  <xsl:variable name="Transaction_Purpose" select="root/IP/Send_Remitance_Transaction_Request/Transaction/Transaction_Purpose"/>
 
     <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">
       <soap:Header/>
@@ -39,65 +39,65 @@
               <xsl:value-of select="$lookupTable/lookup/processTransaction/disbursalType/code[@value=$Delivery_Type]"/>
             </tem:TrnsType>
             <tem:AgtTrnsRefno>
-              <xsl:value-of select="IP/Send_Remitance_Transaction_Request/Transaction/Transaction_No"/>
+              <xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Transaction/Transaction_No"/>
             </tem:AgtTrnsRefno>
             <tem:CustomerFirstName>
-              <xsl:value-of select="IP/Send_Remitance_Transaction_Request/Remitter/First_Name"/>
+              <xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Remitter/First_Name"/>
             </tem:CustomerFirstName>
             <tem:CustomerMiddleName>
-              <xsl:value-of select="IP/Send_Remitance_Transaction_Request/Remitter/Second_Name"/>
+              <xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Remitter/Second_Name"/>
             </tem:CustomerMiddleName>
             <tem:CustomerLastName>
-              <xsl:value-of select="IP/Send_Remitance_Transaction_Request/Remitter/Last_Name"/>
+              <xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Remitter/Last_Name"/>
             </tem:CustomerLastName>
             <tem:CustomerAddress>
-              <xsl:value-of select="IP/Send_Remitance_Transaction_Request/Remitter/Address1"/>
+              <xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Remitter/Address1"/>
             </tem:CustomerAddress>
             <tem:CustomerContact>
-              <xsl:value-of select="IP/Send_Remitance_Transaction_Request/Remitter/MobileNo"/>
+              <xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Remitter/MobileNo"/>
             </tem:CustomerContact>
             <tem:CustomerIdentity>
               <xsl:value-of select="$lookupTable/lookup/processTransaction/senderIdType/code[@value=$Identity_Type]"/>
             </tem:CustomerIdentity>
             <tem:CustomerIdentityNo>
-              <xsl:value-of select="IP/Send_Remitance_Transaction_Request/Remitter/Identity_No"/>
+              <xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Remitter/Identity_No"/>
             </tem:CustomerIdentityNo>
             <tem:CustomerIDExpDate>
               <xsl:value-of select="$convertedDate2"/>
             </tem:CustomerIDExpDate>
             <tem:CustomerNationality>
-              <xsl:value-of select="IP/Send_Remitance_Transaction_Request/Remitter/Nationality_Country_Id_ISO2"/>
+              <xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Remitter/Nationality_Country_Id_ISO2"/>
             </tem:CustomerNationality>
 			<tem:BeneficiaryFirstName>
-              <xsl:value-of select="IP/Send_Remitance_Transaction_Request/Beneficiary/First_Name"/>
+              <xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Beneficiary/First_Name"/>
             </tem:BeneficiaryFirstName>
             <tem:BeneficiaryMiddleName>
-              <xsl:value-of select="IP/Send_Remitance_Transaction_Request/Beneficiary/Second_Name"/>
+              <xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Beneficiary/Second_Name"/>
             </tem:BeneficiaryMiddleName>
             <tem:BeneficiaryLastName>
-              <xsl:value-of select="IP/Send_Remitance_Transaction_Request/Beneficiary/Last_Name"/>
+              <xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Beneficiary/Last_Name"/>
             </tem:BeneficiaryLastName>
             <tem:BeneficiaryAddress>
-              <xsl:value-of select="IP/Send_Remitance_Transaction_Request/Beneficiary/Address1"/>
+              <xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Beneficiary/Address1"/>
             </tem:BeneficiaryAddress>
             <tem:BeneficiaryIdentity>NIC</tem:BeneficiaryIdentity>
             <tem:BenfIdentiyNo>
-              <xsl:value-of select="IP/Send_Remitance_Transaction_Request/Beneficiary/Identity_No"/>
+              <xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Beneficiary/Identity_No"/>
             </tem:BenfIdentiyNo>
             <tem:BeneficiaryContactNumber>
-              <xsl:value-of select="IP/Send_Remitance_Transaction_Request/Beneficiary/Mobile"/>
+              <xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Beneficiary/Mobile"/>
             </tem:BeneficiaryContactNumber>
             <tem:SendingCurrencyCode>
-              <xsl:value-of select="IP/Send_Remitance_Transaction_Request/Remitter/Local_Currency"/>
+              <xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Remitter/Local_Currency"/>
             </tem:SendingCurrencyCode>
             <tem:SendingAmount>
-              <xsl:value-of select="IP/Send_Remitance_Transaction_Request/Amount_Paid"/>
+              <xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Amount_Paid"/>
             </tem:SendingAmount>
             <tem:AccountNo>
-              <xsl:value-of select="IP/Send_Remitance_Transaction_Request/Beneficiary/Account_No"/>
+              <xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Beneficiary/Account_No"/>
             </tem:AccountNo>
             <tem:BeneficiaryBankCode>
-              <xsl:value-of select="IP/Send_Remitance_Transaction_Request/Beneficiary_Bank/Code"/>
+              <xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Beneficiary_Bank/Code"/>
             </tem:BeneficiaryBankCode>
             <tem:BeneficiaryBranchCode>
               <xsl:value-of select="root/IPSend_Remitance_Transaction_Request/Beneficiary_Bank/Branch/Br_Code"/>
@@ -111,8 +111,8 @@
             <tem:ValueDate>
               <xsl:value-of select="$convertedDate3"/>
             </tem:ValueDate>
-		<retryCount><xsl:value-of select="IP/IP_Header/retryCount" /> </retryCount>
-		<Partner_Ref_No><xsl:value-of select="IP/IP_Header/Partner_Ref_No" /></Partner_Ref_No>
+		<retryCount><xsl:value-of select="root/IP/IP_Header/retryCount" /> </retryCount>
+		<Partner_Ref_No><xsl:value-of select="root/IP/IP_Header/Partner_Ref_No" /></Partner_Ref_No>
 
           </tem:objProp>
         </tem:CreateTXN>
