@@ -4,7 +4,7 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema"
 exclude-result-prefixes="xs">
 <xsl:import href="dateTemplate.xsl"/>
 <xsl:output method="html" omit-xml-declaration="yes"/>
-<xsl:variable name="lookupTable" select="document('mappingLookup.xml')"/>
+<xsl:variable name="lookupTable" select="document('icici-mappingLookup.xml')"/>
 <xsl:template match="/">
 
 <xsl:variable name="current-date"  select="''"/>
@@ -12,9 +12,9 @@ exclude-result-prefixes="xs">
     <xsl:variable name="current-date"  select="xs:dateTime(root/IP/IP_Header/Timestamp)"/>
 </xsl:if>
 
-<xsl:variable name="disbursalType" select="root/IP/Get_Txn_Status_Req/Delivery_Type_Id"/>
-<xsl:variable name="c-request" select="root/IP/IP_Header/Requester_Info1" />
-<xsl:variable name="c-coressp" select="root/IP/IP_Header/Corresp_Ref_No" />
+<xsl:variable name="disbursalType" select="root/IP/Get_Remittance_Transaction_Status_Request/Delivery_Type_Id"/>
+<xsl:variable name="c-request" select="root/IP/IP_Header/Partner_Code" />
+<xsl:variable name="c-coressp" select="root/IP/IP_Header/Partner_Ref_No" />
 <xsl:variable name="c-disbursal" select="$lookupTable/lookup/disbursalType/getTransaction/code[@value=$disbursalType]"/>
 <xsl:variable name="processDateTime"  select="''"/>
 <xsl:variable name="UploadDate"  select="''"/>
@@ -53,16 +53,16 @@ exclude-result-prefixes="xs">
         <ICICIReferenceNo></ICICIReferenceNo>
     </Transaction>
    <Signature>
-        <SignatureValue>GSD[/'clientcertria.jks/',/'%Ri@Cert11%/',/'selfsigned/',/'%Ri@Cert11%/',/'SHA256withRSA/',
+        <SignatureValue>
             <xsl:choose>
                 <xsl:when test="string-length($current-date)>0">
-                    <xsl:value-of select="concat($processDateTime,$UploadDate,$c-request, $c-coressp, $c-disbursal)" />
+                   GSD[ <xsl:value-of select="concat($processDateTime,$UploadDate,$c-request, $c-coressp, $c-disbursal)" />]
                 </xsl:when>
                 <xsl:otherwise>
-                    <xsl:value-of select="concat($c-request, $c-coressp, $c-disbursal)" />
+                    GSD[<xsl:value-of select="concat($c-request, $c-coressp, $c-disbursal)" />]
                 </xsl:otherwise>
             </xsl:choose>
-            ,/'PKCS7/']
+            
         </SignatureValue>
     </Signature>
 

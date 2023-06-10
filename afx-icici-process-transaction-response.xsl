@@ -4,6 +4,7 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema"
 exclude-result-prefixes="xs">
 <xsl:output method="html" omit-xml-declaration="yes"/>
 	 <xsl:param name="PartnerRequestBody" />
+	 	<xsl:param name="Partner_Ref_No" />
 <xsl:variable name="lookupTable" select="document('icici-mappingLookup.xml')"/>
 
  <xsl:variable name="Partner_Return_Code" select="TrnOrderAck/AckStatus" />
@@ -40,6 +41,7 @@ exclude-result-prefixes="xs">
 		
 		<Exact_Response>  <xsl:copy-of select="."/> </Exact_Response>
         <Partner_Request><xsl:value-of select="$PartnerRequestBody"  disable-output-escaping="yes" /></Partner_Request>
+		<Unique_Id><xsl:value-of select="$Partner_Ref_No" /></Unique_Id>
 	</IP_Header>					
 </IP>
 						

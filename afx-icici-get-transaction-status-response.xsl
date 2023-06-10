@@ -1,6 +1,8 @@
 <xsl:stylesheet version="1.0"  xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:temp="http://tempuri.org/">
   <xsl:output method="html"  indent="yes" omit-xml-declaration="yes"/>
   <xsl:variable name="lookupTable" select="document('icici-mappingLookup.xml')"/>
+	 <xsl:param name="PartnerRequestBody" />
+	 	<xsl:param name="Partner_Ref_No" />
 
 <!-- identity template to copy all nodes and attributes -->
     <xsl:template match="@* | node()">
@@ -24,7 +26,7 @@
         <ReferenceNo> <xsl:value-of select="TrnOrderAck/correspondentid" /></ReferenceNo>				
         <Transaction_Status> </Transaction_Status>				
         <Request_Timestamp></Request_Timestamp>					
-        <Response_Timestamp><<xsl:value-of select="TrnOrderAck/ProcessDateTime" /></Response_Timestamp>					
+        <Response_Timestamp><xsl:value-of select="TrnOrderAck/ProcessDateTime" /></Response_Timestamp>					
         <Partner_Ref_No> <xsl:value-of select="TrnOrderAck/EHReferenceNo" /></Partner_Ref_No> 
 
         <Business_Return_Code> <xsl:value-of select="$afx-code"/></Business_Return_Code>					
@@ -34,7 +36,7 @@
         <Status></Status>		  
         <Exact_Response>  <xsl:copy-of select="."/> </Exact_Response>
          <Partner_Request><xsl:value-of select="$PartnerRequestBody"  disable-output-escaping="yes" /></Partner_Request>
-
+        <Unique_Id><xsl:value-of select="$Partner_Ref_No" /></Unique_Id>
       </IP_Header>						
 
       	<Get_Remittance_Transaction_Status_Response>						
