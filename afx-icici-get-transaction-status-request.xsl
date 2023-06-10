@@ -56,10 +56,10 @@ exclude-result-prefixes="xs">
         <SignatureValue>
             <xsl:choose>
                 <xsl:when test="string-length($current-date)>0">
-                   GSD[ <xsl:value-of select="concat($processDateTime,$UploadDate,$c-request, $c-coressp, $c-disbursal)" />]
+                   GSD[/'clientcertria.jks/',/'%Ri@Cert11%/',/'selfsigned/', /'%Ri@Cert11%/', /'SHA256withRSA/', /'<xsl:value-of select="concat($processDateTime,$UploadDate,$c-request, $c-coressp, $c-disbursal)" />/',/'PKCS7/']
                 </xsl:when>
                 <xsl:otherwise>
-                    GSD[<xsl:value-of select="concat($c-request, $c-coressp, $c-disbursal)" />]
+                    [/'clientcertria.jks/',/'%Ri@Cert11%/',/'selfsigned/', /'%Ri@Cert11%/', /'SHA256withRSA/', /'<xsl:value-of select="concat($c-request, $c-coressp, $c-disbursal)" />/',/'PKCS7/']
                 </xsl:otherwise>
             </xsl:choose>
             
