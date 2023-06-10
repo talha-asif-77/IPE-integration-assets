@@ -143,11 +143,11 @@
             <code value='906'>801099</code>
             <code value='119'>801099</code>
             <code value=''>801099</code>	
-            <code value='U'>0</code>	
-            <code value='N'>0</code>	
-            <code value='S'>0</code>	
-            <code value='V'>0</code>	
-            <code value='L'>0</code>	
+            <code value='U'>001001</code>	
+            <code value='N'>001001</code>	
+            <code value='S'>001001</code>	
+            <code value='V'>001001</code>	
+            <code value='L'>001001</code>	
             <code value='D'>801099</code>	
             <code value='X'>801099</code>	
             <code value='R'>801099</code>	
@@ -284,6 +284,7 @@
             <code value="801048">No Rates or Charges found</code>	
             <code value="201045">Connection refused</code>	
             <code value="801101">Partial Cancelation Succes</code>	
+            <code value="001001">Transaction under process</code>	
         </returnDesc>
 
 </lookup>
