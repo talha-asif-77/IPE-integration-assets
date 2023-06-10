@@ -1,0 +1,387 @@
+<lookup>
+    <processTransaction>
+        <branchMap>
+            <code value="37">2</code>
+            <code value="149">1</code>
+            <code value="7516">999</code>
+            <code value="9906">1</code>
+            <code value="51">1</code>
+            <code value="127">1</code>
+            <code value="113">1</code>
+            <code value="38">10</code>
+            <code value="94">1</code>
+            <code value="71">999</code>
+            <code value="47">75</code>
+            <code value="162">1</code>
+            <code value="154">1</code>
+            <code value="114">10</code>
+            <code value="158">1</code>
+            <code value="43">1</code>
+            <code value="9919">1</code>
+            <code value="7604">1</code>
+            <code value="105">1</code>
+            <code value="155">999</code>
+            <code value="9940">1</code>
+            <code value="36">9900</code>
+            <code value="39">999</code>
+            <code value="152">1</code>
+            <code value="46">1</code>
+            <code value="151">999</code>
+            <code value="160">1</code>
+            <code value="78">1</code>
+            <code value="132">1</code>
+            <code value="124">13</code>
+            <code value="28">99</code>
+            <code value="30">1</code>
+            <code value="29">1</code>
+            <code value="42">1</code>
+            <code value="7518">1</code>
+            <code value="26">1</code>
+            <code value="27">177</code>
+            <code value="25">32</code>
+            <code value="146">9</code>
+            <code value="157">1</code>
+            <code value="143">999</code>
+            <code value="50">1</code>
+            <code value="9902">1</code>
+            <code value="31">143</code>
+            <code value="9939">10</code>
+            <code value="66">1</code>
+            <code value="164">1</code>
+            <code value="63">1</code>
+            <code value="148">1</code>
+            <code value="9201">1</code>
+            <code value="35">1</code>
+            <code value="74">2</code>
+            <code value="32">11</code>
+            <code value="49">1</code>
+            <code value="37">2</code>
+            <code value="149">1</code>
+            <code value="7516">999</code>
+            <code value="9906">1</code>
+            <code value="51">1</code>
+            <code value="127">1</code>
+            <code value="113">1</code>
+            <code value="38">10</code>
+            <code value="94">1</code>
+            <code value="71">999</code>
+            <code value="47">75</code>
+            <code value="162">1</code>
+            <code value="154">1</code>
+            <code value="114">10</code>
+            <code value="158">1</code>
+            <code value="43">1</code>
+            <code value="9919">1</code>
+            <code value="7604">1</code>
+            <code value="105">1</code>
+            <code value="155">999</code>
+            <code value="9940">1</code>
+            <code value="36">9900</code>
+            <code value="39">999</code>
+            <code value="152">1</code>
+            <code value="46">1</code>
+            <code value="151">999</code>
+            <code value="160">1</code>
+            <code value="78">1</code>
+            <code value="132">1</code>
+            <code value="124">13</code>
+            <code value="28">99</code>
+            <code value="30">1</code>
+            <code value="29">1</code>
+            <code value="42">1</code>
+            <code value="7518">1</code>
+            <code value="26">1</code>
+            <code value="27">177</code>
+            <code value="25">32</code>
+            <code value="146">9</code>
+            <code value="157">1</code>
+            <code value="143">999</code>
+            <code value="50">1</code>
+            <code value="9902">1</code>
+            <code value="31">143</code>
+            <code value="9939">10</code>
+            <code value="66">1</code>
+            <code value="164">1</code>
+            <code value="63">1</code>
+            <code value="148">1</code>
+            <code value="9201">1</code>
+            <code value="35">1</code>
+            <code value="74">2</code>
+            <code value="32">11</code>
+            <code value="49">1</code>
+        </branchMap>
+
+        <returnCode>
+            <code value="1001">0</code>		
+            <code value="">801099</code>		
+            <code value="I001">0</code>		
+            <code value="RPT1">0</code>		
+            <code value="N002">0</code>		
+            <code value="RPT2">801099</code>		
+            <code value="RPT3">801099</code>		
+            <code value="CNL01">801099</code>		
+            <code value="A002">801099</code>		
+            <code value="ERR1">801099</code>		
+            <code value="ERR2">801099</code>		
+            <code value="P001">801099</code>		
+            <code value="I001">0</code>		
+            <code value="A001">0</code>		
+            <code value="E001">801099</code>		
+            <code value="E002">801099</code>		
+            <code value="E003">801099</code>		
+            <code value="E004">801099</code>		
+            <code value="E005">801099</code>		
+            <code value="E006">801099</code>		
+            <code value="E007">801099</code>		
+            <code value="E008">801099</code>		
+            <code value="E009">801099</code>		
+            <code value="E010">801099</code>		
+            <code value="E011">801099</code>		
+            <code value="E012">801099</code>		
+            <code value="E013">801099</code>		
+            <code value="E014">801099</code>		
+            <code value="E015">801099</code>		
+            <code value="E017">801099</code>		
+            <code value="E018">801099</code>		
+            <code value="E019">801099</code>		
+            <code value="E020">801099</code>		
+            <code value="E021">801099</code>		
+            <code value="N001">801099</code>		
+        </returnCode>
+
+        <idType>
+            <code value="CNIC">1</code>	
+            <code value="PASSPORT">3</code>	
+            <code value="POC">4</code>	
+            <code value="POC">4</code>	
+        </idType>
+
+        <disbursalType>
+            <code value="PU">CP</code>	
+            <code value="SB">CA</code>	
+            <code value="OB">CA</code>	
+        </disbursalType>
+
+        <CorrespondentBranchCode>
+            <code value="PU">699</code>	
+        </CorrespondentBranchCode>
+
+        <correspBankCode>
+            <code value="PU">2</code>	
+        </correspBankCode>
+
+    </processTransaction>
+
+    <amendTransaction>
+         <returnCode>
+            <code value="SUCCESS">0000</code>		
+            <code value="ERROR">801099</code>		
+            <code value="RPT1">0000</code>		
+            <code value="N002">0000</code>		
+            <code value="RPT2">801099</code>		
+            <code value="RPT3">801099</code>		
+            <code value="CNL01">801099</code>		
+            <code value="A002">801099</code>		
+            <code value="ERR1">801099</code>		
+            <code value="ERR2">801099</code>		
+            <code value="P001">801099</code>		
+            <code value="I001">0000</code>		
+            <code value="A001">0000</code>		
+            <code value="E001">801099</code>		
+            <code value="E002">801099</code>		
+            <code value="E003">801099</code>		
+            <code value="E004">801099</code>		
+            <code value="E005">801099</code>		
+            <code value="E006">801099</code>		
+            <code value="E007">801099</code>		
+            <code value="E008">801099</code>		
+            <code value="E009">801099</code>		
+            <code value="E010">801099</code>		
+            <code value="E011">801099</code>		
+            <code value="E012">801099</code>		
+            <code value="E013">801099</code>		
+            <code value="E014">801099</code>		
+            <code value="E015">801099</code>		
+            <code value="E017">801099</code>		
+            <code value="E018">801099</code>		
+            <code value="E019">801099</code>		
+            <code value="E020">801099</code>		
+            <code value="E021">801099</code>		
+            <code value="N001">801099</code>		
+         </returnCode>   
+    </amendTransaction>
+
+    <cancelTransaction>
+         <returnCode>
+            <code value="RPT1">0000</code>		
+            <code value="N002">0000</code>		
+            <code value="RPT2">801099</code>		
+            <code value="RPT3">801099</code>		
+            <code value="CNL01">801099</code>		
+            <code value="A002">801099</code>		
+            <code value="ERR1">801099</code>		
+            <code value="ERR2">801099</code>		
+            <code value="P001">801099</code>		
+            <code value="I001">0000</code>		
+            <code value="A001">0000</code>		
+            <code value="E001">801099</code>		
+            <code value="E002">801099</code>		
+            <code value="E003">801099</code>		
+            <code value="E004">801099</code>		
+            <code value="E005">801099</code>		
+            <code value="E006">801099</code>		
+            <code value="E007">801099</code>		
+            <code value="E008">801099</code>		
+            <code value="E009">801099</code>		
+            <code value="E010">801099</code>		
+            <code value="E011">801099</code>		
+            <code value="E012">801099</code>		
+            <code value="E013">801099</code>		
+            <code value="E014">801099</code>		
+            <code value="E015">801099</code>		
+            <code value="E017">801099</code>		
+            <code value="E018">801099</code>		
+            <code value="E019">801099</code>		
+            <code value="E020">801099</code>		
+            <code value="E021">801099</code>		
+            <code value="N001">801099</code>		
+         </returnCode>
+    </cancelTransaction>
+
+    <Fetch_Rates_And_Charges>
+        <returnCode>
+            <code value="I001">0000</code>		
+            <code value="A001">0000</code>		
+            <code value="E001">801099</code>		
+            <code value="E002">801099</code>		
+            <code value="E003">801099</code>		
+            <code value="E004">801099</code>		
+            <code value="E005">801099</code>		
+            <code value="E006">801099</code>		
+            <code value="E007">801099</code>		
+            <code value="E008">801099</code>		
+            <code value="E009">801099</code>		
+            <code value="E010">801099</code>		
+            <code value="E011">801099</code>		
+            <code value="E012">801099</code>		
+            <code value="E013">801099</code>		
+            <code value="E014">801099</code>		
+            <code value="E015">801099</code>		
+            <code value="E017">801099</code>		
+            <code value="E018">801099</code>		
+            <code value="E019">801099</code>		
+            <code value="E020">801099</code>		
+            <code value="E021">801099</code>		
+            <code value="N001">801099</code>		
+            <code value="RPT1">0000</code>		
+            <code value="N002">0000</code>		
+            <code value="RPT2">801099</code>		
+            <code value="RPT3">801099</code>		
+            <code value="CNL01">801099</code>		
+            <code value="A002">801099</code>		
+            <code value="ERR1">801099</code>		
+            <code value="ERR2">801099</code>		
+            <code value="P001">801099</code>		
+        </returnCode>
+
+        <disbursalType>
+            <code value="SB">CA</code>	
+            <code value="OB">CA</code>	
+        </disbursalType>
+    </Fetch_Rates_And_Charges>
+
+    <getTransaction>
+        <returnCode>
+            <code value="I001">0000</code>		
+            <code value="A001">0000</code>		
+            <code value="E001">801099</code>		
+            <code value="E002">801099</code>		
+            <code value="E003">801099</code>		
+            <code value="E004">801099</code>		
+            <code value="E005">801099</code>		
+            <code value="E006">801099</code>		
+            <code value="E007">801099</code>		
+            <code value="E008">801099</code>		
+            <code value="E009">801099</code>		
+            <code value="E010">801099</code>		
+            <code value="E011">801099</code>		
+            <code value="E012">801099</code>		
+            <code value="E013">801099</code>		
+            <code value="E014">801099</code>		
+            <code value="E015">801099</code>		
+            <code value="E017">801099</code>		
+            <code value="E018">801099</code>		
+            <code value="E019">801099</code>		
+            <code value="E020">801099</code>		
+            <code value="E021">801099</code>		
+            <code value="N001">801099</code>		
+            <code value="RPT1">0000</code>		
+            <code value="N002">0000</code>		
+            <code value="RPT2">801099</code>		
+            <code value="RPT3">801099</code>		
+            <code value="CNL01">801099</code>		
+            <code value="A002">801099</code>		
+            <code value="ERR1">801099</code>		
+            <code value="ERR2">801099</code>		
+            <code value="P001">801099</code>		
+        </returnCode>
+    </getTransaction>
+
+        <returnDesc>
+            <code value="801047">Partial Success for rates</code>	
+            <code value="801099">Unsuccessful Status Code received from Correspondent. Please see Correspondent Return Code and Description for more details</code>	
+            <code value="101013">Batch Details count for No. of transactions doesnot match with number of IP_Transaction tags</code>	
+            <code value="201014">Correspondant Code missing</code>	
+            <code value="201015">Operation Type ID missing</code>	
+            <code value="101016">Invalid Batch Details</code>	
+            <code value="201017">Invalid payload format.</code>	
+            <code value="201018">Request template is not available for the respective Correspondent.</code>	
+            <code value="201019">Method type is not available</code>	
+            <code value="201020">Service type is not available</code>	
+            <code value="801021">Error occurred, while getting response from Correspondent</code>	
+            <code value="201022">Invalid transaction response template</code>	
+            <code value="201023">Correspondent response template is empty</code>	
+            <code value="201024">Delivery Type ID missing</code>	
+            <code value="201025">Service Endpoint URL is not available for the respective Correspondent</code>	
+            <code value="201026">Request token url is corrupted</code>	
+            <code value="801045">No Request is sent for this payload.</code>	
+            <code value="201028">Error occured, while parsing xml.</code>	
+            <code value="201029">payload format is empty.</code>	
+            <code value="801030">Error occured, while parsing of respose template.</code>	
+            <code value="201031">Delivery Type Id missing.</code>	
+            <code value="201032">Sender name is not found.</code>	
+            <code value="201033">FT number is missing.</code>	
+            <code value="201034">Amount value is missing.</code>	
+            <code value="201035">Receiver name, not found.</code>	
+            <code value="201036">Correspondent code is missing.</code>	
+            <code value="201037">Correspondent Reference number is necessary.</code>	
+            <code value="201038">Delivery Type Id is missing.</code>	
+            <code value="201039">Receiver currency code is mandatory</code>	
+            <code value="201040">Receiver currency amount is necessary.</code>	
+            <code value="201041">Receiver Account Number or IBAN, must be available.</code>	
+            <code value="201042">URL is not valid.</code>	
+            <code value="801043">Header is not available for asynchronous response.</code>	
+            <code value="801044">Transaction already persists with same correlation Id.</code>	
+            <code value="101012">Multiple Transactions exist for NT operation type</code>	
+            <code value="101011">Batch Details not found</code>	
+            <code value="201010">Invalid Operation Type ID</code>	
+            <code value="201009">Channel doesnot allow this operation</code>	
+            <code value="201008">Invalid Channel ID</code>	
+            <code value="101007">Invalid XSLT File</code>	
+            <code value="101006">Error occurred in locating XSLT File</code>	
+            <code value="201005">Error occurred while connecting to IP Configuration DB</code>	
+            <code value="201004">Correspondent API does not exist for this operation.</code>	
+            <code value="201003">Correspondent doesnot allow this operation</code>	
+            <code value="201002">Request XML Validation Failed</code>	
+            <code value="201001">Invalid Correspondent Code</code>	
+            <code value="801100">An unexpected error occurred while processing the request. Please see logs for further details.</code>	
+            <code value="801000">Duplicate Transaction</code>	
+            <code value="0000">Success.</code>	
+            <code value="201027">Some data is missed out. Please see logs for further details.</code>	
+            <code value="801046">Partial Success for charges</code>	
+            <code value="801048">No Rates or Charges found</code>	
+            <code value="201045">Connection refused</code>	
+            <code value="801101">Partial Cancelation Succes</code>	
+        </returnDesc>
+
+</lookup>
