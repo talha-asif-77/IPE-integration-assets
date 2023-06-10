@@ -32,7 +32,10 @@
         <Partner_Return_Code> <xsl:value-of select="$Partner_Return_Code"/></Partner_Return_Code>					
         <Partner_Return_Desc> <xsl:value-of select="$Partner_Return_Desc"/></Partner_Return_Desc>					
 		<Status></Status>					
-							
+		
+    		<Exact_Response>  <xsl:copy-of select="."/> </Exact_Response>
+    <Partner_Request><xsl:value-of select="$PartnerRequestBody"  disable-output-escaping="yes" /></Partner_Request>	
+    <Unique_Id><xsl:value-of select="$Partner_Ref_No" /></Unique_Id>			
 	</IP_Header>						
 	<Get_Remittance_Transaction_Status_Response>						
 		<Txn_Type> <xsl:value-of select="//*[local-name()='txnType']" /></Txn_Type>					
@@ -41,9 +44,7 @@
 		<No_of_Txn></No_of_Txn>					
 							
 		<Response_Status></Response_Status>
-		<Exact_Response>  <xsl:copy-of select="."/> </Exact_Response>
-    <Partner_Request><xsl:value-of select="$PartnerRequestBody"  disable-output-escaping="yes" /></Partner_Request>	
-    <Unique_Id><xsl:value-of select="$Partner_Ref_No" /></Unique_Id>			
+
 	</Get_Remittance_Transaction_Status_Response>						
 </IP>							
 
