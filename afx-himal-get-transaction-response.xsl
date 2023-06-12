@@ -16,7 +16,8 @@
   <xsl:variable name="Partner_Return_Code" select="//*[local-name()='Code']" />
   <xsl:variable name="Partner_Return_Desc" select="//*[local-name()='StatusDesc']" />
   <xsl:variable name="afx-code" select="$lookupTable/lookup/getTransaction/returnCode/code[@value=$Partner_Return_Code]"/>
-    <IP>							
+   <root>
+	  <IP>							
 	<IP_Header>						
 		<CIF></CIF>					
 		<Partner_Ref_No></Partner_Ref_No>					
@@ -32,7 +33,9 @@
         <Partner_Return_Code> <xsl:value-of select="$Partner_Return_Code"/></Partner_Return_Code>					
         <Partner_Return_Desc> <xsl:value-of select="$Partner_Return_Desc"/></Partner_Return_Desc>				
 		<Status></Status>					
-							
+				<Exact_Response>  <xsl:copy-of select="."/> </Exact_Response>
+        <Partner_Request><xsl:value-of select="$PartnerRequestBody"  disable-output-escaping="yes" /></Partner_Request>			
+       <Unique_Id><xsl:value-of select="$Partner_Ref_No" /></Unique_Id> 				
 	</IP_Header>						
 	<Get_Remittance_Transaction_Status_Response>						
 		<Txn_Type></Txn_Type>					
@@ -41,11 +44,9 @@
 		<No_of_Txn></No_of_Txn>					
 							
 		<Response_Status></Response_Status>
-		<Exact_Response>  <xsl:copy-of select="."/> </Exact_Response>
-        <Partner_Request><xsl:value-of select="$PartnerRequestBody"  disable-output-escaping="yes" /></Partner_Request>			
-       <Unique_Id><xsl:value-of select="$Partner_Ref_No" /></Unique_Id> 		
+			
 	</Get_Remittance_Transaction_Status_Response>						
 	</IP>							
-
+</root>
   </xsl:template>
 </xsl:stylesheet>
