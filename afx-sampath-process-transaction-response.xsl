@@ -20,7 +20,7 @@ exclude-result-prefixes="xs">
 
   <xsl:variable name="Partner_Return_Code"  select="//*[local-name()='processTransactionReturn']" /> 
   <xsl:variable name="Partner_Return_Desc"  select="//*[local-name()='processTransactionReturn']" /> 
-  <xsl:variable name="afx-code" select="$lookupTable/lookup/returnCode/code[@value=$Partner_Return_Code]"/>
+  <xsl:variable name="afx-code" select="$lookupTable/lookup/processTransaction/returnCode/code[@value=$Partner_Return_Code]"/>
     <root>
     <IP>							
       <IP_Header>						
@@ -36,7 +36,7 @@ exclude-result-prefixes="xs">
         <Response_Timestamp></Response_Timestamp>					
                   
         <Business_Return_Code> <xsl:value-of select="$afx-code"/></Business_Return_Code>					
-        <Business_Return_Desc> <xsl:value-of select="$lookupTable/lookup/processTransaction/returnDesc/code[@value=$afx-code]"/></Business_Return_Desc>		
+        <Business_Return_Desc> <xsl:value-of select="$lookupTable/lookup/returnDesc/code[@value=$afx-code]"/></Business_Return_Desc>		
 
      			<Partner_Return_Code> <xsl:value-of select="$Partner_Return_Code"/></Partner_Return_Code>
      			 <Partner_Return_Desc> <xsl:value-of select="$Partner_Return_Desc"/></Partner_Return_Desc>	
