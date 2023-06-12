@@ -1,10 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 xmlns:SOAPenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:rem="http://www.bdo.com.ph/RemitAPI"
 version="1.0">
 <xsl:import href="dateTemplate.xsl"/>
-<xsl:output indent="yes" method="html"/>
-
+<xsl:output indent="yes" method="html"  omit-xml-declaration="yes"/>
 
 <xsl:variable name="TRN_NO" select="root/IP/Send_Remitance_Transaction_Request/Transaction/Transaction_No"></xsl:variable>
 <xsl:variable name="BEN_CURRENCY_AMOUNT" select="root/IP/Send_Remitance_Transaction_Request/Beneficiary/Beneficiary_Currency_Amount"></xsl:variable>
@@ -26,7 +24,7 @@ version="1.0">
                     MEC[/'AES/ECB/PKCS5Padding/',/'AES/',/'tvnw63ufg9gh5392/',/'SunJCE/',/'b2!8%v%H/']
                 </rem:password>
                 <rem:signedData>
-                    GSD[/'./keystore/TestStore.jks/',/'testpassword/',/'TestAlias/',/'testpassword/',/'SHA256withRSA/',GHS[/'<xsl:value-of select="$GHS"/>/',/'MD5/']]
+                    GSD[/'clientcertria.jks/',/'%Ri@Cert11%/',/'selfsigned/', /'%Ri@Cert11%/', /'SHA256withRSA/',GHS[/'<xsl:value-of select="$GHS"/>/',/'MD5/']]
                 </rem:signedData>
                 <rem:receiverBirthDate>
                     <xsl:variable name="formatDateDOB">

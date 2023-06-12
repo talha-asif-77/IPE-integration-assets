@@ -1,0 +1,136 @@
+<lookup>
+
+<processTransaction>
+    <returnCode>
+            <code value='00'>000000</code>
+            <code value='PRC'>000000</code>
+            <code value='01'>000000</code>
+            <code value='VSD'>801099</code>
+            <code value='VUP'>801099</code>
+            <code value='VRN'>801099</code>
+            <code value='RA1'>801099</code>
+            <code value='RMP'>801099</code>
+            <code value='VRG'>801099</code>
+            <code value='VRB'>801099</code>
+            <code value='VTT'>801099</code>
+            <code value='VPC'>801099</code>
+            <code value='VLC'>801099</code>
+            <code value='MB1'>801099</code>
+            <code value='MB2'>801099</code>
+            <code value='STT'>801099</code>
+            <code value='BPE'>801099</code>
+            <code value='PKI'>801099</code>
+            <code value='SQL'>801099</code>
+            <code value='BCR'>801099</code>
+            <code value='ICC'>801099</code>
+            <code value='ILC'>801099</code>
+            <code value='FAN'>801099</code>
+            <code value='PDC'>801099</code>
+            <code value='VSP'>801099</code>
+            <code value='VSL'>801099</code>
+            <code value='VRL'>801099</code>
+            <code value='SA1'>801099</code>
+            <code value='VSF'>201032</code>
+            <code value='VRF'>201035</code>
+            <code value='MIN'>801099</code>
+            <code value='ISF'>801099</code>
+            <code value='PBC'>801099</code>
+            <code value='VID'>801099</code>
+            <code value='TNO'>801099</code>
+            <code value='DUP'>801000</code>
+            <code value='51'>801099</code>
+            <code value='201'>801099</code>
+            <code value='202'>801099</code>
+            <code value='203'>801099</code>
+            <code value='204'>801099</code>
+            <code value='230'>801099</code>
+            <code value='231'>801099</code>
+            <code value='15'>801099</code>
+            <code value='21'>801099</code>
+            <code value='04'>801099</code>
+            <code value='26'>801099</code>
+            <code value='76'>801099</code>
+            <code value='99'>801099</code>
+            <code value='18'>801099</code>
+            <code value='39'>801099</code>
+            <code value='12'>801099</code>
+        </returnCode>
+</processTransaction>
+
+<getTransactionStatus>
+            <code value='PAID'>000000</code>
+            <code value='OUTSTANDING'>001001</code>
+            <code value='FOR VERIFICATION'>001001</code>
+            <code value='INPROCESS'>001001</code>
+            <code value='CANCELLED'>801099</code>
+            <code value='CHK'>801099</code>
+</getTransactionStatus>
+
+<disbursalType>
+            <code value='OB'>10</code>	
+            <code value='SB'>40</code>	
+            <code value='PU'>POI</code>		
+</disbursalType>
+
+<PayableCode>
+
+</PayableCode>
+   <returnDesc>
+            <code value="801047">Partial Success for rates</code>	
+            <code value="801099">Unsuccessful Status Code received from Correspondent. Please see Correspondent Return Code and Description for more details</code>	
+            <code value="101013">Batch Details count for No. of transactions doesnot match with number of IP_Transaction tags</code>	
+            <code value="201014">Correspondant Code missing</code>	
+            <code value="201015">Operation Type ID missing</code>	
+            <code value="101016">Invalid Batch Details</code>	
+            <code value="201017">Invalid payload format.</code>	
+            <code value="201018">Request template is not available for the respective Correspondent.</code>	
+            <code value="201019">Method type is not available</code>	
+            <code value="201020">Service type is not available</code>	
+            <code value="801021">Error occurred, while getting response from Correspondent</code>	
+            <code value="201022">Invalid transaction response template</code>	
+            <code value="201023">Correspondent response template is empty</code>	
+            <code value="201024">Delivery Type ID missing</code>	
+            <code value="201025">Service Endpoint URL is not available for the respective Correspondent</code>	
+            <code value="201026">Request token url is corrupted</code>	
+            <code value="801045">No Request is sent for this payload.</code>	
+            <code value="201028">Error occured, while parsing xml.</code>	
+            <code value="201029">payload format is empty.</code>	
+            <code value="801030">Error occured, while parsing of respose template.</code>	
+            <code value="201031">Delivery Type Id missing.</code>	
+            <code value="201032">Sender name is not found or Invalid.</code>	
+            <code value="201033">FT number is missing.</code>	
+            <code value="201034">Amount value is missing.</code>	
+            <code value="201035">Receiver name, not found or Invalid.</code>	
+            <code value="201036">Correspondent code is missing.</code>	
+            <code value="201037">Correspondent Reference number is necessary.</code>	
+            <code value="201038">Delivery Type Id is missing.</code>	
+            <code value="201039">Receiver currency code is mandatory</code>	
+            <code value="201040">Receiver currency amount is necessary.</code>	
+            <code value="201041">Receiver Account Number or IBAN, must be available.</code>	
+            <code value="201042">URL is not valid.</code>	
+            <code value="801043">Header is not available for asynchronous response.</code>	
+            <code value="801044">Transaction already persists with same correlation Id.</code>	
+            <code value="101012">Multiple Transactions exist for NT operation type</code>	
+            <code value="101011">Batch Details not found</code>	
+            <code value="201010">Invalid Operation Type ID</code>	
+            <code value="201009">Channel doesnot allow this operation</code>	
+            <code value="201008">Invalid Channel ID</code>	
+            <code value="101007">Invalid XSLT File</code>	
+            <code value="101006">Error occurred in locating XSLT File</code>	
+            <code value="201005">Error occurred while connecting to IP Configuration DB</code>	
+            <code value="201004">Correspondent API does not exist for this operation.</code>	
+            <code value="201003">Correspondent doesnot allow this operation</code>	
+            <code value="201002">Request XML Validation Failed</code>	
+            <code value="201001">Invalid Correspondent Code</code>	
+            <code value="801100">An unexpected error occurred while processing the request. Please see logs for further details.</code>	
+            <code value="801000">Duplicate Transaction</code>	
+            <code value="000000">Success.</code>	
+            <code value="201027">Some data is missed out. Please see logs for further details.</code>	
+            <code value="801046">Partial Success for charges</code>	
+            <code value="801048">No Rates or Charges found</code>	
+            <code value="201045">Connection refused</code>	
+            <code value="801101">Partial Cancelation Succes</code>	
+            <code value="001001">Transaction is In-Process</code>
+        </returnDesc>
+
+</lookup>
