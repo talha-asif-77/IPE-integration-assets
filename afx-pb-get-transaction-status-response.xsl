@@ -9,6 +9,7 @@
   <xsl:variable name="Partner_Return_Code" select="//*[local-name()='StatusCode']" />
   <xsl:variable name="Partner_Return_Desc" select="//*[local-name()='StatusMessage']" />
   <xsl:variable name="afx-code" select="$lookupTable/lookup/processTransaction/returnCode/code[@value=$Partner_Return_Code]"/>
+   <root>
     <IP>							
       <IP_Header>						
         <CIF></CIF>					
@@ -41,6 +42,7 @@
                     
           <Response_Status></Response_Status>					
         </Get_Remittance_Transaction_Status_Response>	
-    </IP>		
+    </IP>	
+    </root>
   </xsl:template>
 </xsl:stylesheet>
