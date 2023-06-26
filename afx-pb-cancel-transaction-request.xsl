@@ -11,7 +11,7 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema"
 {
   "username": "userALF001",
   "password": "HSWND1J3",
-  "agentcode": "ALF"
+  "agentcode": "ALF",
   "AgentAccountCode":"",
   "ReferenceNo": "<xsl:value-of select="root/IP/IP_Header/Partner_Ref_No" />",
   "CancelReason": "<xsl:value-of select="root/IP/IP_Header/Cancel_Reason" />" 
