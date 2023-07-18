@@ -14,9 +14,9 @@
         <soap:Body>
             <tem:TransactionStatus>
                 <tem:objRef>
-                    <tem:USERNAME>ALFUAEAPI01</tem:USERNAME>
-                    <tem:PASSWORD>EIn@0133</tem:PASSWORD>
-                    <tem:AGENTCODE>891</tem:AGENTCODE>
+                    <tem:USERNAME>ALFARAPI001</tem:USERNAME>
+                    <tem:PASSWORD>Afa@5637</tem:PASSWORD>
+                    <tem:AGENTCODE>821</tem:AGENTCODE>
                     <tem:SESSIONID> <xsl:value-of select="concat($convertedDate,'-',root/IP/IP_Header/Partner_Code)" /></tem:SESSIONID>
                     <tem:REFERENCENO><xsl:value-of select="root/IP/IP_Header/Partner_Code"/></tem:REFERENCENO>
                     <retryCount><xsl:value-of select="root/IP/IP_Header/retryCount" /></retryCount>
