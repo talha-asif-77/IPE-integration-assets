@@ -90,9 +90,8 @@
             <tem:SendingCurrencyCode>
               <xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Remitter/Local_Currency"/>
             </tem:SendingCurrencyCode>
-            <tem:SendingAmount>
-              <xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Amount_Paid"/>
-            </tem:SendingAmount>
+            <tem:SendingAmount>100.00</tem:SendingAmount>
+<!--               <xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Amount_Paid"/> -->
             <tem:AccountNo>
               <xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Beneficiary/Account_No"/>
             </tem:AccountNo>
