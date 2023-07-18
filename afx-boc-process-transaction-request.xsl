@@ -29,9 +29,9 @@
       <soap:Body>
         <tem:CreateTXN> 
           <tem:objProp>
-             <tem:USERNAME>ALFUAEAPI01</tem:USERNAME>
-            <tem:PASSWORD>EIn@0133</tem:PASSWORD>
-            <tem:AGENTCODE>891</tem:AGENTCODE>
+             <tem:USERNAME>ALFARAPI001</tem:USERNAME>
+            <tem:PASSWORD>Afa@5637</tem:PASSWORD>
+            <tem:AGENTCODE>821</tem:AGENTCODE>
             <tem:SESSIONID>
               <xsl:value-of select="concat($convertedDate1,'-',IP/IP_Header/Partner_Code)" />
             </tem:SESSIONID>
