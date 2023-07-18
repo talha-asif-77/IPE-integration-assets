@@ -131,9 +131,9 @@
         </senderIdType>
 
         <disbursalType>
-            <code value="PU">C</code>	
-            <code value="SB">B</code>	
-            <code value="OB">B</code>	
+            <code value="CSPK">C</code>	
+            <code value="CRSB">B</code>	
+            <code value="CROB">B</code>	
         </disbursalType>
 
         <purposeCode>
