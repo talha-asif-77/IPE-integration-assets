@@ -99,7 +99,7 @@
 <!--               <xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Beneficiary_Bank/Code"/> -->
             
             <tem:BeneficiaryBranchCode>
-              <xsl:value-of select="root/IPSend_Remitance_Transaction_Request/Beneficiary_Bank/Branch/Br_Code"/>
+              <xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Beneficiary_Bank/Branch/Br_Code"/>
             </tem:BeneficiaryBranchCode>
             <tem:SourceofRemitance>
               <xsl:value-of select="$lookupTable/lookup/processTransaction/fundSourceType/code[@value=$Source_of_Fund]"/>
