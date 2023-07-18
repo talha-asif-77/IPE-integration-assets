@@ -105,10 +105,8 @@
             <tem:SourceofRemitance>
               <xsl:value-of select="$lookupTable/lookup/processTransaction/fundSourceType/code[@value=$Source_of_Fund]"/>
             </tem:SourceofRemitance>
-            <tem:Purpose>
+            <tem:Purpose>001</tem:Purpose>
 		<!-- <xsl:value-of select="$lookupTable/lookup/processTransaction/purposeCode/code[@value=$Transaction_Purpose]"/> -->
-		001
-            </tem:Purpose>
             <tem:ValueDate>
               <xsl:value-of select="$convertedDate3"/>
             </tem:ValueDate>
