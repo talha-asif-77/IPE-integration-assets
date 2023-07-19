@@ -84,31 +84,31 @@
             <tem:BenfIdentiyNo>
               <xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Beneficiary/Identity_No"/>
             </tem:BenfIdentiyNo>
-            <tem:BeneficiaryContactNumber>
-              <xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Beneficiary/Mobile"/>
-            </tem:BeneficiaryContactNumber>
+            <tem:BeneficiaryContactNumber>9012345678</tem:BeneficiaryContactNumber>
+<!--               <xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Beneficiary/Mobile"/> -->
             <tem:SendingCurrencyCode>
               <xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Remitter/Local_Currency"/>
             </tem:SendingCurrencyCode>
-            <tem:SendingAmount>100.00</tem:SendingAmount>
-<!--               <xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Amount_Paid"/> -->
+            <tem:SendingAmount>
+		<xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Beneficiary/Foreign_Currency_Amount"/>
+	    </tem:SendingAmount>
             <tem:AccountNo>
               <xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Beneficiary/Account_No"/>
             </tem:AccountNo>
             <tem:BeneficiaryBankCode>7010</tem:BeneficiaryBankCode>
 <!--               <xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Beneficiary_Bank/Code"/> -->
-            
             <tem:BeneficiaryBranchCode>
               <xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Beneficiary_Bank/Branch/Br_Code"/>
             </tem:BeneficiaryBranchCode>
             <tem:SourceofRemitance>
               <xsl:value-of select="$lookupTable/lookup/processTransaction/fundSourceType/code[@value=$Source_of_Fund]"/>
             </tem:SourceofRemitance>
-            <tem:Purpose>001</tem:Purpose>
-		<!-- <xsl:value-of select="$lookupTable/lookup/processTransaction/purposeCode/code[@value=$Transaction_Purpose]"/> -->
-            <tem:ValueDate>
-              <xsl:value-of select="$convertedDate3"/>
-            </tem:ValueDate>
+            <tem:Purpose><xsl:value-of select="$Transaction_Purpose" /></tem:Purpose>
+<!-- 		<xsl:value-of select="$lookupTable/lookup/processTransaction/purposeCode/code[@value=$Transaction_Purpose]"/> -->
+	   
+            <tem:ValueDate>19-JUL-2023</tem:ValueDate>
+<!--               <xsl:value-of select="$convertedDate3"/> -->
+            
 		<retryCount><xsl:value-of select="root/IP/IP_Header/retryCount" /> </retryCount>
 		<Partner_Ref_No><xsl:value-of select="root/IP/IP_Header/Partner_Ref_No" /></Partner_Ref_No>
 
