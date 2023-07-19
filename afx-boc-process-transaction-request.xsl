@@ -10,7 +10,7 @@
             </xsl:call-template>
  </xsl:variable>
  <xsl:variable name="convertedDate2">
-             <xsl:call-template name="convertDateTime-to-DD-MM-YYYY">
+             <xsl:call-template name="convertDateTime-to-DD-MMM-YYYY">
                           <xsl:with-param name="inputDateTime" select="root/IP/Send_Remitance_Transaction_Request/Remitter/Identity_Expiry_Date" />
             </xsl:call-template>
  </xsl:variable>
