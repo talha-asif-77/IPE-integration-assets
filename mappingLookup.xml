@@ -133,66 +133,68 @@
         <disbursalType>
             <code value="CSPK">C</code>	
             <code value="CRSB">B</code>	
-            <code value="CROB">B</code>	
+            <code value="CROB">B</code> 
         </disbursalType>
 
         <purposeCode>
-            <code value='INHERITANCE'>19</code>
-            <code value='INVESTMENT'>4</code>
-            <code value='SETTLEMENT OF PERSONAL PURCHASE'>10</code>
-            <code value='Military service allowances'>20</code>
-            <code value='Installments'>20</code>
-            <code value='Family Support'>1</code>
-            <code value='Savings'>2</code>
-            <code value='Electronic Appliances Purchase'>20</code>
-            <code value='Medical Expenses'>13</code>
-            <code value='Consultant Fees'>20</code>
-            <code value='Vehicle Purchase'>20</code>
-            <code value='Subsistences'>20</code>
-            <code value='Construction Building Material'>20</code>
-            <code value='Trade Related Payment'>9</code>
-            <code value='Computer Accessories Purchase'>20</code>
-            <code value='Auto Accessories  Purchase'>20</code>
-            <code value='Travelling Expenses'>16</code>
-            <code value='Hotel Booking'>15</code>
-            <code value='Gift'>8</code>
-            <code value='Communication Service'>20</code>
-            <code value='Cost Of Transport And Shipping'>20</code>
-            <code value='Education Expenses'>5</code>
-            <code value='Payment For Material Purcahse'>10</code>
-            <code value='Rent Payment'>17</code>
-            <code value='Salary Payment'>14</code>
-            <code value='Loan Payment'>11</code>
-            <code value='Freight Chargse - Freight Charges'>20</code>
-            <code value='Realstate Purchase'>18</code>
-            <code value='Freight Handling Charges'>20</code>
-            <code value='Imports'>20</code>
-            <code value='Exports'>20</code>
-            <code value='Online Shopping'>10</code>
-            <code value='Government Fees'>20</code>
-            <code value='Insurance Services'>12</code>
+            <code value="1">10</code>
+            <code value="2">9</code>
+            <code value="3">4</code>
+            <code value="4">18</code>
+            <code value="10">20</code>
+            <code value="41">20</code>
+            <code value="42">1</code>
+            <code value="43">12</code>
+            <code value="44">4</code>
+            <code value="45">20</code>
+            <code value="46">6</code>
+            <code value="47">13</code>
+            <code value="48">15</code>
+            <code value="49">20</code>
+            <code value="50">9</code>
+            <code value="51">20</code>
+            <code value="54">20</code>
+            <code value="55">20</code>
+            <code value="56">20</code>
+            <code value="58">4</code>
+            <code value="59">4</code>
+            <code value="60">11</code>
+            <code value="61">20</code>
+            <code value="62">12</code>
+            <code value="63">1</code>
+            <code value="64">11</code>
+            <code value="65">20</code>
+            <code value="66">9</code>
+            <code value="67">5</code>
+            <code value="68">15</code>
+            <code value="69">13</code>
+            <code value="70">16</code>
+            <code value="72">20</code>
+            <code value="73">20</code>
+            <code value="74">20</code>
+            <code value="75">20</code>
+            <code value="76">20</code>
+            <code value="77">20</code>
+            <code value="78">20</code>
+            <code value="79">17</code>
+            <code value="80">3</code>
+            <code value="81">20</code>			
         </purposeCode>
 
         <fundSourceType>
-            <code value='Salary'>1</code>
-            <code value='Stocks'>2</code>
-            <code value='Other'>7</code>
-            <code value='Saving'>7</code>
-            <code value='Gratuity'>7</code>
-            <code value='Legal Settelment'>3</code>
-            <code value='Sale Of Property'>2</code>
-            <code value='Sale Of Vehicle'>2</code>
-            <code value='Sale Of Shares'>2</code>
-            <code value='Bonus'>5</code>
-            <code value='Dividend Of Shares'>2</code>
-            <code value='Process Of Litigation'>7</code>
-            <code value='Business'>2</code>
-            <code value='Retained Earning'>7</code>
-            <code value='Travel Expenses'>7</code>
-            <code value='INSURANCE CLAIM'>6</code>
-            <code value='Advance End of Service'>7</code>
-            <code value='BANK LOAN'>4</code>
-            <code value='End of Service'>7</code>
+            <code value='1'>1</code>
+			<code value='2'>7</code>
+			<code value='3'>4</code>
+			<code value='4'>2</code>
+			<code value='5'>7</code>
+			<code value='6'>5</code>
+			<code value='7'>7</code>
+			<code value='8'>7</code>
+			<code value='9'>7</code>
+			<code value='10'>6</code>
+			<code value='11'>7</code>
+			<code value='12'>7</code>
+			<code value='13'>7</code>
         </fundSourceType>
 
     </processTransaction>
@@ -200,7 +202,6 @@
     <cancelTransaction>
          <returnCode>
             <code value='0'>0</code>
-             <code value='000'>0</code>
             <code value=''>801099</code>
             <code value='0'>0</code>
             <code value='PENDING'>0</code>
