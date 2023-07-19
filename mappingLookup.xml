@@ -124,10 +124,8 @@
         </returnCode>
 
         <senderIdType>
-            <code value="R1">PAS</code>	
-            <code value="R3">GII</code>	
-            <code value="R4">GII</code>	
-            <code value="R8">GII</code>	
+            <code value="PP">PAS</code>
+            <code value="NC">GII</code>
         </senderIdType>
 
         <disbursalType>
