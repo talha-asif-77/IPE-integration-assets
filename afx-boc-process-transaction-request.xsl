@@ -86,7 +86,7 @@
             </tem:BenfIdentiyNo>
             <tem:BeneficiaryContactNumber>9012345678</tem:BeneficiaryContactNumber>
 <!--               <xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Beneficiary/Mobile"/> -->
-            <tem:SendingCurrencyCode>USD<tem:SendingCurrencyCode>
+            <tem:SendingCurrencyCode>USD</tem:SendingCurrencyCode>
             <tem:SendingAmount>
 		<xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Beneficiary/Foreign_Currency_Amount"/>
 	    </tem:SendingAmount>
