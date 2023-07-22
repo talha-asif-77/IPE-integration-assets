@@ -201,7 +201,7 @@
          <returnCode>
             <code value='0'>0</code>
             <code value=''>801099</code>
-            <code value='0'>0</code>
+            <code value='000'>000000</code>
             <code value='PENDING'>0</code>
             <code value='PAID'>0</code>
             <code value='CANCEL'>0</code>
