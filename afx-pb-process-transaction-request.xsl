@@ -79,9 +79,9 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
   "PurposeCode": "<xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Transaction/Transaction_Purpose" />",
   "SourceCode": "<xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Remitter/Source_of_Fund" />",
   "TransactionRemarks": "",
-  "username": "userALF001",
-  "password": "HSWND1J3",
-  "agentcode": "ALF",
+  "username": "ALFAUATAE",
+  "password": "ENR02WVB",
+  "agentcode": "105",
   "retryCount": "<xsl:value-of select="root/IP/IP_Header/retryCount" />",
   "Partner_Ref_No": "<xsl:value-of select="root/IP/IP_Header/Partner_Ref_No" />"
 }
