@@ -9,9 +9,9 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema"
 <xsl:template match="/">
   
 {
-  "AGENTCODE":"ALF",
-  "PASSWORD":"HSWND1J3",
-  "USERNAME":"userALF001",
+  "AGENTCODE":"105",
+  "PASSWORD":"ALFAUATAE",
+  "USERNAME":"ENR02WVB",
   "AccountNumber":"2370917091"
 }
   </xsl:template>
