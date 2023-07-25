@@ -9,7 +9,7 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
   
   <xsl:variable name="convertedDate">
              <xsl:call-template name="convertDateTime-to-dd-MMM-yyyy">
-                          <xsl:with-param name="inputDateTime" select="root/IP/IP_Header/Request_Timestamp" />
+                          <xsl:with-param name="inputDateTime" select="root/IP/Send_Remitance_Transaction_Request/Transaction/Transaction_Value_Date" />
             </xsl:call-template>
  </xsl:variable>
  <xsl:variable name="DOB">
@@ -42,7 +42,7 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
   "AgentReferenceNo": "<xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Transaction/Transaction_No" />",
   "ValueDate": "<xsl:value-of select="$convertedDate" />" ,
   "TransactionServiceCode": "FCR",
-  "SendingAgentCode": "ALF",
+  "SendingAgentCode": "105",
   "SendingCurCode": "AED",
   "ReceivingCurCode": "<xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Beneficiary/Receiver_Currency" />",
   "CustomerFirstName": "<xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Remitter/First_Name" />",
@@ -79,9 +79,9 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
   "PurposeCode": "<xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Transaction/Transaction_Purpose" />",
   "SourceCode": "<xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Remitter/Source_of_Fund" />",
   "TransactionRemarks": "",
-  "username": "userALF001",
-  "password": "HSWND1J3",
-  "agentcode": "ALF",
+  "username": "ALFAUATAE",
+  "password": "ENR02WVB",
+  "agentcode": "105",
   "retryCount": "<xsl:value-of select="root/IP/IP_Header/retryCount" />",
   "Partner_Ref_No": "<xsl:value-of select="root/IP/IP_Header/Partner_Ref_No" />"
 }
