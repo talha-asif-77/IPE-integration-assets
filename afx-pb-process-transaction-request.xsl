@@ -42,7 +42,7 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
   "AgentReferenceNo": "<xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Transaction/Transaction_No" />",
   "ValueDate": "<xsl:value-of select="$convertedDate" />" ,
   "TransactionServiceCode": "FCR",
-  "SendingAgentCode": "ALF",
+  "SendingAgentCode": "105",
   "SendingCurCode": "<xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Transaction/Source_Country_Code_ISO3" />",
   "ReceivingCurCode": "<xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Transaction/Destination_Country_Code_ISO3" />",
   "CustomerFirstName": "<xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Remitter/First_Name" />",
