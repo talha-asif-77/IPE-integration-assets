@@ -9,9 +9,9 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema"
 <xsl:template match="/">
   
 {
-  "username": "userALF001",
-  "password": "HSWND1J3",
-  "agentcode": "ALF",
+  "username": "ALFAUATAE",
+  "password": "ENR02WVB",
+  "agentcode": "105",
   "AgentAccountCode":"",
   "ReferenceNo": "<xsl:value-of select="root/IP/Get_Remittance_Transaction_Status_Request/Transaction_No" />"
 }
