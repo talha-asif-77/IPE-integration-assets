@@ -41,11 +41,12 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
  </xsl:variable>
 
   <xsl:variable name="transactionPurpose" select="root/IP/Send_Remitance_Transaction_Request/Transaction/Transaction_Purpose"/>
+  <xsl:variable name="deliveryType" select="root/IP/Send_Remitance_Transaction_Request/Delivery_Type"/>
 
 {
   "AgentReferenceNo": "<xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Transaction/Transaction_No" />",
-  "ValueDate": "<xsl:value-of select="$convertedDate" />" ,
-  "TransactionServiceCode": "FCR",
+  "ValueDate": "<xsl:value-of select="$convertedDate" />",
+  "TransactionServiceCode": "<xsl:value-of select="$lookupTable/lookup/processTransaction/disbursalType/code[@value=$deliveryType]" />",
   "SendingAgentCode": "105",
   "SendingCurCode": "AED",
   "ReceivingCurCode": "<xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Beneficiary/Receiver_Currency" />",
