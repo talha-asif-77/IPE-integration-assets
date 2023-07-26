@@ -5,6 +5,8 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 <xsl:import href="dateTemplate.xsl"/>
 <xsl:output method="html" />
 
+<xsl:variable name="lookupTable" select="document('pb-mappingLookup.xml')"/>
+
 <xsl:template match="/">
   
   <xsl:variable name="convertedDate">
@@ -37,6 +39,8 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
                           <xsl:with-param name="inputDateTime" select="root/IP/Send_Remitance_Transaction_Request/Beneficiary/Identity_Expiry_Date" />
             </xsl:call-template>
  </xsl:variable>
+
+  <xsl:variable name="transactionPurpose" select="root/IP/Send_Remitance_Transaction_Request/Transaction/Transaction_Purpose"/>
 
 {
   "AgentReferenceNo": "<xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Transaction/Transaction_No" />",
@@ -76,7 +80,7 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
   "BankCode": "<xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Beneficiary_Bank/Code" />",
   "BranchCode": "<xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Beneficiary_Bank/Branch/Br_Code" />",
   "FXAmount": "<xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Beneficiary/Foreign_Currency_Amount" />",
-  "PurposeCode": "<xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Transaction/Transaction_Purpose" />",
+  "PurposeCode": "<xsl:value-of select="$lookupTable/lookup/processTransaction/purposeCode/code[@value=$transactionPurpose]" />",
   "SourceCode": "<xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Remitter/Source_of_Fund" />",
   "TransactionRemarks": "",
   "username": "ALFAUATAE",
