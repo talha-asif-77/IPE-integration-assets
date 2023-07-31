@@ -7,7 +7,7 @@
                 <ser:inquireTransaction>
                     <ser:user>100230</ser:user>
                     <ser:txnPin>
-                        <xsl:value-of select="root/IP/IP_Header/Partner_Ref_No"/>
+                        <xsl:value-of select="root/IP/Get_Remittance_Transaction_Status_Request/Transaction_No"/>
                     </ser:txnPin>
                     <ser:companyId>35</ser:companyId>
                     <ser:accessCode>aG9heA==</ser:accessCode>
