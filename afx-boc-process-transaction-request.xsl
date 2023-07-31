@@ -93,8 +93,7 @@
             <tem:AccountNo>
               <xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Beneficiary/Account_No"/>
             </tem:AccountNo>
-            <tem:BeneficiaryBankCode>7010</tem:BeneficiaryBankCode>
-<!--               <xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Beneficiary_Bank/Code"/> -->
+            <tem:BeneficiaryBankCode> <xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Beneficiary_Bank/Code"/> </tem:BeneficiaryBankCode>              
             <tem:BeneficiaryBranchCode>
               <xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Beneficiary_Bank/Branch/Br_Code"/>
             </tem:BeneficiaryBranchCode>
