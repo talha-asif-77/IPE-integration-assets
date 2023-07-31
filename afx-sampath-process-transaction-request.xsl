@@ -24,7 +24,7 @@ exclude-result-prefixes="xs">
                 <ser:accessCode>aG9heA==</ser:accessCode>
                 <ser:companyId>35</ser:companyId>
                 <ser:txnData><xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Transaction/Transaction_No" /></ser:txnData>
-                <ser:txnData><xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Transaction/Source_Country_Code_ISO3" /></ser:txnData>
+                <ser:txnData><xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Beneficiary/Beneficiary_Currency" /></ser:txnData>
                 <ser:txnData><xsl:choose>
                             <xsl:when test="root/IP/Send_Remitance_Transaction_Request/Remitter/Local_Currency_Amount"><xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Remitter/Local_Currency_Amount"></xsl:value-of></xsl:when>
                             <xsl:otherwise><xsl:value-of select="root/IP/Send_Remitance_Transaction_Request/Amount_Paid" /></xsl:otherwise>
