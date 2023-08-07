@@ -18,7 +18,7 @@
 
   <xsl:template match="ws:inquireTransactionReturn">
 
-  <xsl:variable name="Partner_Return_Code" select="ws:recStatus" />
+  <xsl:variable name="Partner_Return_Code" select="ws:txnStatus" />
   <xsl:variable name="Partner_Return_Desc" select="ws:msgText" />
   <xsl:variable name="afx-code" select="$lookupTable/lookup/getTransactionStatus/returnCode/code[@value=$Partner_Return_Code]"/>
   <root>
