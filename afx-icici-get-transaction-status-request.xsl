@@ -2,7 +2,7 @@
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 xmlns:xs="http://www.w3.org/2001/XMLSchema"
 exclude-result-prefixes="xs">
-<xsl:import href="dateTemplate.xsl"/>
+<xsl:import href="../dateTemplate.xsl"/>
 <xsl:output method="html" omit-xml-declaration="yes"/>
 <xsl:variable name="lookupTable" select="document('icici-mappingLookup.xml')"/>
 <xsl:template match="/">
