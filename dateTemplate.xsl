@@ -149,6 +149,15 @@
         <xsl:text>-</xsl:text>
         <xsl:value-of select="substring($inputDateTime, 9, 2)"/>
     </xsl:template>
+
+    <xsl:template name="convertDateTime-to-DD_MM_YYYY">
+        <xsl:param name="inputDateTime" />
+        <xsl:value-of select="substring($inputDateTime, 9, 2)"/>
+        <xsl:text>/</xsl:text>
+        <xsl:value-of select="substring($inputDateTime, 6, 2)"/>
+        <xsl:text>/</xsl:text>
+        <xsl:value-of select="substring($inputDateTime, 1, 4)"/>
+    </xsl:template>
     
     <!-- Add more date conversion templates here -->
 </xsl:stylesheet>
