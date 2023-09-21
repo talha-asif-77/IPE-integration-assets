@@ -151,4 +151,14 @@
     </xsl:template>
     
     <!-- Add more date conversion templates here -->
+    <xsl:template name="convertISO8601DateTime-to-DDMMYYYYHHMMSSmmm">
+        <xsl:param name="inputDateTime" />
+        <xsl:value-of select="substring($inputDateTime, 9, 2)"/>
+        <xsl:value-of select="substring($inputDateTime, 6, 2)"/>
+        <xsl:value-of select="substring($inputDateTime, 1, 4)"/>
+        <xsl:value-of select="substring($inputDateTime, 12, 2)"/>
+        <xsl:value-of select="substring($inputDateTime, 15, 2)"/>
+        <xsl:value-of select="substring($inputDateTime, 18, 2)"/>
+        <xsl:text>00000</xsl:text> <!-- Milliseconds portion -->
+    </xsl:template>
 </xsl:stylesheet>
