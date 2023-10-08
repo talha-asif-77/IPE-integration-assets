@@ -45,7 +45,7 @@
     </xsl:template>
 
      <!-- Convert date-time from YYYY-MM-DD HH:MM:ss to DD/MM/YYYY -->
-    <xsl:template name="convertDateTime-to-DD/MM/YYYY">
+    <xsl:template name="convertDateTime-with-slash">
         <xsl:param name="inputDateTime" />
         <xsl:value-of select="substring($inputDateTime, 9, 2)"/>
         <xsl:text>/</xsl:text>
