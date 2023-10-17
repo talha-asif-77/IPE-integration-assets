@@ -85,6 +85,14 @@
         <xsl:value-of select="substring($inputDateTime, 1, 4)"/>
     </xsl:template>
 
+<!-- Convert date-time from YYYY-MM-DD HH:MM:ss to MMDDYYYY -->
+    <xsl:template name="convertDateTime-to-mmddyyyy">
+        <xsl:param name="inputDateTime" />
+        <xsl:value-of select="substring($inputDateTime, 6, 2)"/>
+        <xsl:value-of select="substring($inputDateTime, 9, 2)"/>
+        <xsl:value-of select="substring($inputDateTime, 1, 4)"/>
+    </xsl:template>
+
 <!-- Convert date-time from YYYY-MM-DD HH:MM:ss to YYYYMMDD -->
     <xsl:template name="convertDateTime-to-YYYYMMDD">
         <xsl:param name="inputDateTime" />
