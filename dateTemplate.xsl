@@ -190,6 +190,14 @@
         <xsl:value-of select="substring($inputDateTime, 18, 2)"/>
         <xsl:text>00000</xsl:text> <!-- Milliseconds portion -->
     </xsl:template>
+
+<!-- Convert date-time from YYYY-MM-DD HH:MM:ss to DDMMYYYY -->
+    <xsl:template name="convertDateTime-to-DDMMYYYY-withoutSymbol">
+        <xsl:param name="inputDateTime" />
+        <xsl:value-of select="substring($inputDateTime, 9, 2)"/>
+        <xsl:value-of select="substring($inputDateTime, 6, 2)"/>
+        <xsl:value-of select="substring($inputDateTime, 1, 4)"/>
+    </xsl:template>
     
     <!-- Add more date conversion templates here -->
 </xsl:stylesheet>
