@@ -10,6 +10,17 @@
         <xsl:value-of select="substring($inputDate, 1, 2)"/>
     </xsl:template>
 
+<!-- Convert date-time from YYYY-MM-DD HH:MM:ss to DDMMYYYYHHMMSS -->
+    <xsl:template name="convertDateTime-to-DDMMYYYYHHMMSS">
+        <xsl:param name="inputDateTime" />
+        <xsl:value-of select="substring($inputDateTime, 9, 2)"/>
+        <xsl:value-of select="substring($inputDateTime, 6, 2)"/>
+        <xsl:value-of select="substring($inputDateTime, 1, 4)"/>
+        <xsl:value-of select="substring($inputDateTime, 12, 2)"/>
+        <xsl:value-of select="substring($inputDateTime, 15, 2)"/>
+        <xsl:value-of select="substring($inputDateTime, 18, 2)"/>
+    </xsl:template>
+
     <!-- Convert date-time from YYYY-MM-DD HH:MM:ss to YYYY-MM-DD'T'HH:MM:ss -->
     <xsl:template name="convertDateTime-to-ISO">
         <xsl:param name="inputDateTime" />
