@@ -318,7 +318,51 @@
     </xsl:otherwise>
   </xsl:choose>
 </xsl:template>
-    
+
+
+       <xsl:template name="convertDateTime-to-yyyyMMddHHmmss">
+        <xsl:param name="inputDateTime" />
+        <xsl:value-of select="concat(
+                    substring($inputDateTime, 1, 4),
+                    substring($inputDateTime, 6, 2),
+                    substring($inputDateTime, 9, 2),
+                    substring($inputDateTime, 12, 2),
+                    substring($inputDateTime, 15, 2),
+                    substring($inputDateTime, 18, 2)
+                    )"/>
+    </xsl:template>
+
+    <xsl:template name="format-current-date-to-dd-MM-yy">
+    <!-- Get the current date and time -->
+    <xsl:param name="inputDateTime" />
+
+    <!-- Extract the year, month, and day -->
+    <xsl:variable name="year" select="substring($inputDateTime, 3, 2)" />
+    <xsl:variable name="month" select="substring($inputDateTime, 6, 2)" />
+    <xsl:variable name="day" select="substring($inputDateTime, 9, 2)" />
+
+    <!-- Define month name to number mapping -->
+    <xsl:variable name="months">
+        <month num="01" name="JAN" />
+        <month num="02" name="FEB" />
+        <month num="03" name="MAR" />
+        <month num="04" name="APR" />
+        <month num="05" name="MAY" />
+        <month num="06" name="JUN" />
+        <month num="07" name="JUL" />
+        <month num="08" name="AUG" />
+        <month num="09" name="SEP" />
+        <month num="10" name="OCT" />
+        <month num="11" name="NOV" />
+        <month num="12" name="DEC" />
+    </xsl:variable>
+
+    <!-- Get the month abbreviation -->
+    <xsl:variable name="monthAbbr" select="$months/month[@num=$month]/@name" />
+
+    <!-- Output the formatted date as dd-MMM-yy -->
+    <xsl:value-of select="concat($day, '-', $monthAbbr, '-', $year)" />
+</xsl:template>
     <!-- Add more date conversion templates here -->
 </xsl:stylesheet>
 
